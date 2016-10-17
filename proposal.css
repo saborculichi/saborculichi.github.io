@@ -658,6 +658,7 @@ textarea {
 		width: 100%;
 		overflow: visible;
 		background-color: black;
+		overflow-x: hidden;
 	}
 	
 	.top {
