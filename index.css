@@ -924,6 +924,7 @@ img {
 		/* important */
 		height: 100%;
 		background-color: black;
+		overflow-x: hidden;
 	}
 	
 	.top {
@@ -1352,6 +1353,7 @@ img {
 	.cd-fixed-bg.cd-bg-3 {
 	  background-image: url("http://i.imgur.com/bmWjoWz.jpg");
 	}
+
 	
 	.cd-scrolling-bg {
 		height: 55%;
