@@ -1,1249 +1,1096 @@
+.top,body {
+    width: 100%;
+    background-color: #000
+}
+
 body {
-	height: auto;
-	width: 100%;
-	overflow: visible;
-	background-color: black;
+    overflow: visible;
+    height: auto
+}
+
+#need,.top {
+    position: absolute;
+    left: 0;
+    right: 0
 }
 
 .top {
-	position: absolute;
-	top: 0;
-	height: 50px;
-	left: 0;
-	right: 0;
-	width: 100%;
-	background-color: black;
+    height: 50px;
+    top: 0
+}
+
+#need,#tacos {
+    color: #fff;
+    font-family: 'Handlee',sans-serif
 }
 
 #need {
-	position: absolute;
-	top: -7px;
-	left: 0;
-	right: 0;
-	text-align: center;
-	color: white;
-	font-family: 'Handlee', sans-serif;
-	font-size: 19px;
+    text-align: center;
+    top: -7px;
+    font-size: 19px
 }
 
 #tacos {
-	-webkit-appearance: none;
-	text-decoration: none;
-	color: white;
-	top: -10px;
-	font-size: 17px;
-	border-radius: 2px;
-	height: 30px;
-	width: 130px;
-	border-color: transparent;
-	background-color: #B51A00;
-	font-family: 'Handlee', sans-serif;
-	cursor: pointer;
-	outline: none;
+    -webkit-appearance: none;
+    text-decoration: none;
+    top: -10px;
+    font-size: 17px;
+    border-radius: 2px;
+    height: 30px;
+    width: 130px;
+    border-color: transparent;
+    background-color: #b51a00;
+    cursor: pointer;
+    outline: none
 }
 
 #siteimg {
-	position: absolute;
-	top: 50px;
-	left: 0;
-	right: 0;
-	height: 400px;
-	background-image: url("http://i.imgur.com/7p50tib.jpg");
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    height: 400px;
+    background-image: url(http://i.imgur.com/7p50tib.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
 }
 
 #logoimg {
-	position: absolute;
-	top: 30%;
-	left: 0;
-	right: 0;
-	text-align: center;
-	height: auto;
-	width: 100%;
-	background-color: transparent;
+    top: 30%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    background-color: transparent
 }
 
 img {
-	position: relative;
-	height: 150px;
-	width: 300px;
-	border-radius: 10px;
+    position: relative;
+    height: 150px;
+    width: 300px;
+    border-radius: 10px
 }
 
-.menuwrap {
-	position: absolute;
-	display: none;
+#logoimg,.menuwrap {
+    position: absolute
 }
 
-.littleme p { text-align: right; }
- .toggle, [id^=drop] {
- display: none;
+.littleme p {
+    text-align: right
 }
 
-/*Dropdown Menu for mobile site. Hidden on desktop*/
+.littleme,.menuwrap,.toggle,[id^=drop] {
+    display: none
+}
+
 .littleme {
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  text-align: right;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  display: none;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    position: absolute
 }
 
 .littleme:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both
 }
 
 .littleme ul {
-  padding: 0;
-  left: -6%;
-  right: 6%;
-  list-style: none;
-  position: relative;
-  text-align: center;
+    padding: 0;
+    left: -6%;
+    right: 6%;
+    list-style: none;
+    position: relative;
+    text-align: center
+}
+
+.littleme a,.littleme ul li {
+    text-align: center;
+    opacity: 1;
+    display: block;
+    background-color: #b51a00
 }
 
 .littleme ul li {
-  left: -6%;
-  right: 6%;
-  text-align: center;
-  height: auto;
-  width: 100%;
-  display: block;
-  background-color: #B51A00;
-  opacity: 1;
+    height: auto;
+    width: 100%;
+    left: -6%;
+    right: 6%
 }
 
 .littleme a {
-  text-align: center;
-  opacity: 1;
-  left: 0;
-  right: 0;
-  display: block;
-  background-color: #B51A00;
-  color: #FFF;
-  font-size: 20px;
-  font-family: ;
-  line-height: 45px;
-  text-decoration: none;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 45px;
+    text-decoration: none
 }
 
-.littleme li > a:after { content: ' +';}
+.littleme li>a:after {
+    content: ' +'
+}
 
-.littleme li > a:only-child:after { content: ''; }
+.littleme li>a:only-child:after {
+    content: ''
+}
+
+.menu,.toma {
+    background-color: #000
+}
 
 .menu {
-	position: absolute;
-	top: 450px;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 95px;
-	z-index: 7000;
-	background-color: black;
+    left: 0;
+    right: 0;
+    z-index: 7000;
+    position: absolute;
+    top: 450px;
+    width: 100%;
+    height: 95px
 }
 
 .toma {
-	position: relative;
-	height: 30px;
-	width: 30px;
-	top: 5px;
-	background-color: black;
-	opacity: 0;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    top: 5px;
+    opacity: 0
 }
 
 #menutext {
-	position: absolute;
-	left: -80px;
-	right: 0;
-	top: -5px;
-	bottom: 0;
-	list-style: none;
-	font-family: 'Handlee', sans-serif;
-	font-size: 15px;
-	color: white;
-	text-align: center;
-	vertical-align: middle;
+    position: absolute;
+    left: -80px;
+    right: 0;
+    top: -5px;
+    bottom: 0;
+    list-style: none;
+    font-family: 'Handlee',sans-serif;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle
 }
 
-
 li {
-	display: inline;
-	padding: 0px 30px;
+    display: inline;
+    padding: 0 30px
 }
 
 a {
-	text-decoration: none;
-	outline: none;
-	color: white;
+    text-decoration: none;
+    outline: none;
+    color: #fff
 }
 
 a:hover .toma {
-	opacity: 1;
-	top: 5px;
-	transition: .7s;
+    opacity: 1;
+    top: 5px;
+    transition: .7s
 }
 
 .fixed {
-	position: fixed;
-	top: 0;
-	height: 95px;
+    position: fixed;
+    top: 0;
+    height: 95px
 }
 
 #container {
-	position: absolute;
-	top: 450px;
-	left: 0;
-	right: 0;
-	height: 1100px;
-	background-image: url("http://i.imgur.com/FZDtDqG.jpg");
-	background-position: center;
-	background-repeat: repeat;
-	opacity: .6;
-	z-index: 999;
+    top: 450px;
+    height: 1100px;
+    background-image: url(http://i.imgur.com/FZDtDqG.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    opacity: .6;
+    z-index: 999
+}
+
+#container,#formhead,.forma {
+    position: absolute;
+    left: 0;
+    right: 0
 }
 
 #formhead {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 600px;
-	text-align: center;
-	font-size: 36px;
-	font-family: 'Handlee', sans-serif;
-	color: white;
-	z-index: 5000;
-	transition: .2s;
+    font-size: 36px;
+    font-family: 'Handlee',sans-serif;
+    color: #fff;
+    top: 600px;
+    text-align: center;
+    z-index: 5000;
+    transition: .2s
 }
 
 .forma {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 640px;
-	height: 600px;
-	width: 100%;
-	text-align: left;
-	z-index: 1002;
-	background-color: transparent;
-	transition: .35s;
+    top: 640px;
+    height: 600px;
+    width: 100%;
+    text-align: left;
+    z-index: 1002;
+    background-color: transparent;
+    transition: .35s
 }
 
 #phone {
-	position: absolute;
-	left: 0;
-	right: 109px;
-	top: 80px;
-	text-align: right;
-	font-family: 'Handlee', sans-serif;
-	font-size: 22px;
-	color: white;
-	transition: .1s;
+    right: 109px;
+    top: 80px;
+    font-size: 22px;
+    color: #fff;
+    transition: .1s
+}
+
+#diffcolor,#maildiff,#mailstat,#phone {
+    position: absolute;
+    left: 0;
+    text-align: right;
+    font-family: 'Handlee',sans-serif
 }
 
 #diffcolor {
-	position: absolute;
-	left: 0;
-	right: 80px;
-	top: 105px;
-	text-align: right;
-	font-family: 'Handlee', sans-serif;
-	font-size: 22px;
-	color: #B51A00;
+    right: 80px;
+    top: 105px;
+    color: #b51a00;
+    font-size: 22px
+}
+
+#maildiff,#mailstat {
+    font-size: 23px
 }
 
 #mailstat {
-	position: absolute;
-	left: 0;
-	right: 110px;
-	top: 170px;
-	text-align: right;
-	font-family: 'Handlee', sans-serif;
-	font-size: 23px;
-	color: white;
-	transition: .5s;
+    transition: .5s;
+    right: 110px;
+    top: 170px;
+    color: #fff
 }
 
 #maildiff {
-	position: absolute;
-	left: 0;
-	right: 40px;
-	top: 195px;
-	text-align: right;
-	font-family: 'Handlee', sans-serif;
-	font-size: 23px;
-	color: #B51A00;
+    right: 40px;
+    top: 195px;
+    color: #b51a00
+}
+
+#actform,.nombre {
+    background-color: transparent
+}
+
+#actform,input {
+    font-family: 'Handlee',sans-serif
 }
 
 #actform {
-	position: absolute;
-	top: 90px;
-	height: 600px;
-	left: 0;
-	right: 0;
-	font-family: 'Handlee', sans-serif;
-	font-size: 21px;
-	color: white;
-	z-index: 1002;
-	background-color: transparent;
+    position: absolute;
+    height: 600px;
+    right: 0;
+    z-index: 1002;
+    top: 90px;
+    left: 0;
+    font-size: 21px;
+    color: #fff
 }
 
 input {
-	font-family: 'Handlee', sans-serif;
-	background-color: black;
-	font-size: 22px;
-	color: #B51A00;
-	padding-left: 8px;
-	padding-right: 8px;
+    background-color: #000;
+    font-size: 22px;
+    color: #b51a00;
+    padding-left: 8px;
+    padding-right: 8px
 }
 
 .nombre {
-	position: absolute;
-	background-color: transparent;
-	left: 30px;
-	width: 50px;
-	top: 0;
+    left: 30px;
+    width: 50px;
+    top: 0
 }
 
-#nombredos {
-	outline: none;
-	border: solid 1px #B51A00;
-	background-color: transparent;
-	height: 40px;
-	width: 375px;
+#correodos,#nombredos {
+    outline: none;
+    border: solid 1px #b51a00;
+    background-color: transparent;
+    height: 40px;
+    width: 375px
+}
+
+.correo,.nombre,.telefo {
+    position: absolute
 }
 
 .correo {
-	position: absolute;
-	background-color: transparent;
-	left: 40%;
-	width: 50px;
-	top: 0px;
-}
-
-#correodos {
-	outline: none;
-	border: solid 1px #B51A00;
-	background-color: transparent;
-	height: 40px;
-	width: 375px;
+    background-color: transparent;
+    left: 40%;
+    width: 50px;
+    top: 0
 }
 
 .telefo {
-	position: absolute;
-	background-color: transparent;
-	left: 30px;
-	width: 150px;
-	top: 80px;
-	
+    width: 150px;
+    top: 80px
 }
 
-#telefodos {
-	outline: none;
-	border: solid 1px #B51A00;
-	background-color: transparent;
-	height: 40px;
-	width: 375px;
-	left: 30px;
+#telefodos,.telefo {
+    left: 30px
+}
+
+.cuantos,.telefo,.tipo {
+    background-color: transparent
 }
 
 .cuantos {
-	position: absolute;
-	background-color: transparent;
-	left: 40%;
-	width: 130px;
-	top: 80px;
-	
+    position: absolute;
+    width: 130px;
+    left: 40%;
+    top: 80px
 }
 
-#cuantosdos {
-	outline: none;
-	border: solid 1px #B51A00;
-	background-color: transparent;
-	height: 40px;
-	width: 375px;
+#cuantosdos,#diados,#etedos,#telefodos,#tiempodos,#tipodos {
+    outline: none;
+    border: solid 1px #b51a00;
+    background-color: transparent;
+    height: 40px;
+    width: 375px
 }
 
 .tipo {
-	position: absolute;
-	background-color: transparent;
-	left: 30px;
-	width: 290px;
-	top: 160px;
+    left: 30px;
+    top: 160px
 }
 
-#tipodos {
-	outline: none;
-	border: solid 1px #B51A00;
-	background-color: transparent;
-	height: 40px;
-	width: 375px;
+.dia,.ete,.tiempo,.tipo {
+    position: absolute;
+    width: 290px
 }
 
 .ete {
-	position: absolute;
-	background-color: transparent;
-	left: 40%;
-	width: 290px;
-	top: 160px;
-	
+    background-color: transparent;
+    left: 40%;
+    top: 160px
 }
 
-#etedos {
-	outline: none;
-	border: solid 1px #B51A00;
-	background-color: transparent;
-	height: 40px;
-	width: 375px;
+.dia,.tiempo {
+    top: 240px
 }
 
 .dia {
-	position: absolute;
-	background-color: transparent;
-	left: 30px;
-	width: 290px;
-	top: 240px;
-}
-
-#diados {
-	outline: none;
-	border: solid 1px #B51A00;
-	background-color: transparent;
-	height: 40px;
-	width: 375px;
+    background-color: transparent;
+    left: 30px
 }
 
 .tiempo {
-	position: absolute;
-	background-color: transparent;
-	left: 40%;
-	width: 290px;
-	top: 240px;
+    left: 40%
 }
 
-#tiempodos {
-	outline: none;
-	border: solid 1px #B51A00;
-	background-color: transparent;
-	height: 40px;
-	width: 375px;
+.donde,.tiempo,textarea {
+    background-color: transparent
 }
 
 .donde {
-	position: absolute;
-	background-color: transparent;
-	text-align: left;
-	left: 30px;
-	width: 200px;
-	top: 320px;
+    position: absolute;
+    text-align: left;
+    left: 30px;
+    top: 320px;
+    width: 200px
 }
 
 textarea {
-	background-color: transparent;
-	border: solid 1px #B51A00;
-	resize: none;
-	font-family: 'Handlee', sans-serif;
-	font-size: 23px;
-	padding-left: 8px;
-	padding-right: 8px;
-	color: #B51A00;
-	outline: none;
-	width: 375px;
-	height: 70px;
+    border: solid 1px #b51a00;
+    resize: none;
+    font-family: 'Handlee',sans-serif;
+    font-size: 23px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #b51a00;
+    outline: none;
+    width: 375px;
+    height: 70px
 }
 
-#usebut {
-	position: absolute;
-	left: 30px;
-	top: 640px;
+#sendMessage,#usebut {
+    position: absolute;
+    left: 30px;
+    top: 640px
 }
 
 #sendMessage {
-	-webkit-appearance: none;
-	position: absolute;
-	left: 30px;
-	top: 480px;
-	cursor: pointer;
-	height: 40px;
-	width: 90px;
-	font-family: 'Lato', sans-serif;
-	font-size: 20px;
-	outline: none;
-	text-decoration: none;
-	border: 2px solid #B51A00;
-	background-color: black;
-	color: white;
-	border-radius: 10px;
+    -webkit-appearance: none;
+    top: 480px;
+    cursor: pointer;
+    height: 40px;
+    width: 90px;
+    font-family: 'Lato',sans-serif;
+    font-size: 20px;
+    outline: none;
+    text-decoration: none;
+    border: 2px solid #b51a00;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px
 }
 
 #thanks {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 500px;
-	width: 100%;
-	height: 800px;
-	background-color: transparent;
-	z-index: 1001;
-	overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 500px;
+    width: 100%;
+    height: 800px;
+    background-color: transparent;
+    z-index: 1001;
+    overflow: hidden
+}
+
+.aftersent,.boxer {
+    position: absolute;
+    top: 250px
 }
 
 .boxer {
-	position: absolute;
-	right: -150%;
-	height: 600px;
-	width: 100%;
-	background-color: black;
-	z-index: 100;
-	top: 250px;
+    right: -150%;
+    height: 600px;
+    width: 100%;
+    background-color: #000;
+    z-index: 100
 }
 
 .aftersent {
-	position: absolute;
-	left: 0;
-	right: -150%;
-	top: 250px;
-	font-size: 28px;
-	color: white;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	z-index: 19;
+    left: 0;
+    font-size: 28px;
+    color: #fff;
+    font-family: 'Handlee',sans-serif;
+    z-index: 19
+}
+
+#afterlogo,.aftersent,.aftersent2 {
+    text-align: center;
+    right: -150%
 }
 
 .aftersent2 {
-	position: absolute;
-	left: 0;
-	right: -150%;
-	top: 290px;
-	font-size: 28px;
-	color: white;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	z-index: 19;
+    font-size: 28px;
+    color: #fff;
+    font-family: 'Handlee',sans-serif;
+    z-index: 19;
+    top: 290px
+}
+
+#afterlogo,#phonetwo,.aftersent2 {
+    position: absolute;
+    left: 0
 }
 
 #afterlogo {
-	position: absolute;
-	top: 450px;
-	left: 0;
-	right: -150%;
-	margin: auto;
-	text-align: center;
-	border-radius: 220px;
-	height: 100px;
-	width: 400px;
-	background-image: url("http://i.imgur.com/cBAFUZv.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100%;
+    margin: auto;
+    border-radius: 220px;
+    height: 100px;
+    width: 400px;
+    background-image: url(http://i.imgur.com/cBAFUZv.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 450px
 }
 
 #phonetwo {
-	position: absolute;
-	left: 0;
-	right: 23%;
-	top: 625px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 22px;
-	color: white;
-	z-index: 19;
+    right: 23%;
+    top: 625px;
+    font-size: 22px;
+    color: #fff
+}
+
+#diffcolortwo,#mailstattwo,#phonetwo {
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    z-index: 19
 }
 
 #diffcolortwo {
-	position: absolute;
-	left: 0;
-	right: 23%;
-	top: 650px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 22px;
-	color: #B51A00;
-	z-index: 19;
+    position: absolute;
+    right: 23%;
+    left: 0;
+    top: 650px;
+    font-size: 22px;
+    color: #b51a00
 }
 
 #mailstattwo {
-	position: absolute;
-	left: 12%;
-	right: 0;
-	top: 625px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 23px;
-	color: white;
-	z-index: 19;
+    left: 12%;
+    top: 625px;
+    font-size: 23px;
+    color: #fff
+}
+
+#bottom,#maildifftwo,#mailstattwo {
+    position: absolute;
+    right: 0
 }
 
 #maildifftwo {
-	position: absolute;
-	left: 12%;
-	right: 0;
-	top: 650px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 23px;
-	color: #B51A00;
-	z-index: 49;
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    font-size: 23px;
+    color: #b51a00;
+    left: 12%;
+    top: 650px;
+    z-index: 49
 }
 
-.remform {
-	display: none;
-}
-
-.goaway {
-	display: none;
+.goaway,.remform {
+    display: none
 }
 
 #bottom {
-	position: absolute;
-	top: 1330px;
-	left: 0;
-	right: 0;
-	height: 220px;
-	z-index: 8000;
-	background-color: black;
+    top: 1330px;
+    left: 0;
+    height: 220px;
+    z-index: 8000;
+    background-color: #000
 }
-	
+
 #imgbotl {
-	position: absolute;
-	display: none;
+    position: absolute;
+    display: none
 }
 
 .menutwo {
-	position: absolute;
-	top: 10%;
-	left: 0;
-	right: 0;
-	width: 100%;
-	bottom: 0;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 0
+}
+
+#endstuf,#menutexttwo {
+    position: absolute;
+    font-family: 'Handlee',sans-serif;
+    color: #fff;
+    right: 0;
+    text-align: center
 }
 
 #menutexttwo {
-	position: absolute;
-	left: -80px;
-	right: 0;
-	top: 20%;
-	bottom: 0;
-	list-style: none;
-	font-family: 'Handlee', sans-serif;
-	font-size: 15px;
-	color: white;
-	text-align: center;
-	vertical-align: middle;
+    bottom: 0;
+    list-style: none;
+    vertical-align: middle;
+    left: -80px;
+    top: 20%;
+    font-size: 15px
 }
 
 #endstuf {
-	position: absolute;
-	font-family: 'Handlee', sans-serif;
-	font-size: 14px;
-	color: white;
-	top: 170px;
-	left: 0;
-	right: 0;
-	text-align: center;
-	z-index: 8000;
+    font-size: 14px;
+    top: 170px;
+    left: 0;
+    z-index: 8000
 }
 
-@media all and (max-width: 1024px) {
-	body {
-		height: auto;
-		width: 100%;
-		overflow: visible;
-		background-color: black;
-		overflow-x: hidden;
-	}
-	
-	.top {
-		position: absolute;
-		top: 50px;
-		height: 90px;
-		left: 0;
-		right: 0;
-		width: 100%;
-		background-color: black;
-	}
-	
-	#need {
-		position: absolute;
-		top: -15px;
-		left: 0;
-		right: 0;
-		text-align: center;
-		color: white;
-		font-family: 'Handlee', sans-serif;
-		font-size: 26px;
-	}
-	
-	#tacos {
-		-webkit-appearance: none;
-		text-decoration: none;
-		color: white;
-		top: -10px;
-		font-size: 23px;
-		border-radius: 2px;
-		height: 30px;
-		width: 190px;
-		border-color: transparent;
-		background-color: #B51A00;
-		font-family: 'Handlee', sans-serif;
-		cursor: pointer;
-		outline: none;
-	}
-	
-	#siteimg {
-		position: absolute;
-		top: 140px;
-		left: 0;
-		right: 0;
-		height: 310px;
-		background-image: url("http://i.imgur.com/waq1vxF.jpg");
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	
-	#logoimg {
-		position: absolute;
-		top: 30%;
-		left: 0;
-		right: 0;
-		text-align: center;
-		height: auto;
-		width: 100%;
-		background-color: transparent;
-	}
-	
-	img {
-		position: relative;
-		height: 150px;
-		width: 300px;
-		border-radius: 10px;
-	}
-	
-	.menuwrap {
-		transform: translate3d(0px,0px,0px);
-		position: fixed;
-		display: inline;
-		top: 0;
-		left: 0;
-		right: 0;
-		width: 100%;
-		height: 50px;
-		z-index: 10001;
-	}
-	
-	#alm {
-		position: absolute;
-		height: 48px;
-		top: 0;
-		left: 0;
-		z-index: 10001;
-	}
-	
-	#alm2 {
-		height: 48px;
-		width: 140px;
-	}
-	
-	/*Makes Mobile Version of Menu visible*/
-	.littleme {
-		display: initial;
-		text-align: center;
-	    	left: 0;
-	    	right: 0;
-	    	z-index: 10000;
-	    	height: 50px;
-	    	overflow: visible;
-	    	background-color: black;
-	    	opacity: 1;
-	  }
-	
-	.littleme { margin: 0; }
-	
-	.toggle + a,
-	 .othermenu { 
-	     	display: none;
-	     	left: 0;
-	     	right: 0;
-	     	text-align: center;
-	 }
-	
-	/*Used a Character Font to make the Menu Icon. 
-	It was the most effecient way to get to what I needed.
-	This styles the Menu Icon*/
-	.toggle {
-	    	display: block;
-	    	text-align: right;
-	    	background-color: black;
-	    	opacity: 1;
-	    	top: 3px;
-	    	position: absolute;
-	    	right: 0;
-	    	left: 0;
-	    	color: #B51A00;
-	    	font-size: 48px;
-	    	font-weight: 100;
-	    	line-height: 45px;
-	    	text-decoration: none;
-	    	font-family: 'Material Icons', sans-serif;
-	    	z-index: 7000;
-	}
-	
-	/*Makes Menu Icon Site green after getting clicked*/
-	#drop:checked + label {
-	    	color: #B51A00;
-	}
-	
-	/*Displays Dropdown Menu after Menu Icon is clicked*/
-	[id^=drop]:checked + label + ul {
-	    	display: block;
-	}
-	
-	.littleme ul li {
-		display: block;
-		text-align: center;
-		left: -7.5%;
-		right: 7.5%;
-	    	width: 100%;
-	    	z-index: 6000;
-	    	border: none;
-	    	font-family: 'Handlee', sans-serif;
-	}
-	
-	.littleme ul {
-		padding: 0;
-		left: -7.5%;
-		right: 7.5%;
-	 	list-style: none;
-		position: relative;
-		text-align: center;
-	}
-	
-	.menu {
-		position: absolute;
-		display: none;
-	}
-	
-	#container {
-		position: absolute;
-		top: 450px;
-		left: 0;
-		right: 0;
-		height: 1150px;
-		background-image: url("http://i.imgur.com/FZDtDqG.jpg");
-		background-position: center;
-		background-repeat: repeat;
-		opacity: .6;
-		z-index: 999;
-	}
-	
-	#formhead {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 600px;
-		text-align: center;
-		font-size: 31px;
-		font-family: 'Handlee', sans-serif;
-		color: white;
-		z-index: 5000;
-		transition: .2s;
-	}
-	
-	.forma {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 640px;
-		height: 1050px;
-		width: 100%;
-		text-align: left;
-		z-index: 1002;
-		background-color: transparent;
-		transition: .35s;
-		overflow: hidden;
-	}
-	
-	#phone {
-		position: absolute;
-		display: none;
-	}
-	
-	#diffcolor {
-		position: absolute;
-		display: none;
-	}
-	
-	#mailstat {
-		position: absolute;
-		display: none;
-	}
-	
-	#maildiff {
-		position: absolute;
-		display: none;
-	}
-	
-	#actform {
-		position: absolute;
-		top: 90px;
-		height: 1050px;
-		left: 0;
-		right: 0;
-		font-family: 'Handlee', sans-serif;
-		font-size: 21px;
-		color: white;
-		z-index: 1002;
-		background-color: transparent;
-	}
-	
-	input {
-		font-family: 'Handlee', sans-serif;
-		background-color: black;
-		font-size: 22px;
-		color: #B51A00;
-		padding-left: 8px;
-		padding-right: 8px;
-		margin: auto;
-	}
-	
-	.nombre {
-		position: absolute;
-		background-color: transparent;
-		left: 30px;
-		width: 50px;
-		top: 0;
-	}
-	
-	#nombredos {
-		outline: none;
-		border: solid 1px #B51A00;
-		background-color: transparent;
-		height: 40px;
-		width: 250px;
-	}
-	
-	.correo {
-		position: absolute;
-		background-color: transparent;
-		left: 30px;
-		width: 50px;
-		top: 160px;
-	}
-	
-	#correodos {
-		outline: none;
-		border: solid 1px #B51A00;
-		background-color: transparent;
-		height: 40px;
-		width: 250px;
-	}
-	
-	.telefo {
-		position: absolute;
-		background-color: transparent;
-		left: 30px;
-		width: 150px;
-		top: 80px;
-		
-	}
-	
-	#telefodos {
-		outline: none;
-		border: solid 1px #B51A00;
-		background-color: transparent;
-		height: 40px;
-		width: 250px;
-		left: 30px;
-	}
-	
-	.cuantos {
-		position: absolute;
-		background-color: transparent;
-		left: 30px;
-		width: 130px;
-		top: 240px;
-		
-	}
-	
-	#cuantosdos {
-		outline: none;
-		border: solid 1px #B51A00;
-		background-color: transparent;
-		height: 40px;
-		width: 250px;
-	}
-	
-	.tipo {
-		position: absolute;
-		background-color: transparent;
-		left: 30px;
-		width: 290px;
-		top: 400px;
-	}
-	
-	#tipodos {
-		outline: none;
-		border: solid 1px #B51A00;
-		background-color: transparent;
-		height: 40px;
-		width: 250px;
-	}
-	
-	.ete {
-		position: absolute;
-		background-color: transparent;
-		left: 30px;
-		width: 290px;
-		top: 320px;
-		
-	}
-	
-	#etedos {
-		outline: none;
-		border: solid 1px #B51A00;
-		background-color: transparent;
-		height: 40px;
-		width: 250px;
-	}
-	
-	.dia {
-		position: absolute;
-		background-color: transparent;
-		left: 30px;
-		width: 290px;
-		top: 480px;
-	}
-	
-	#diados {
-		outline: none;
-		border: solid 1px #B51A00;
-		background-color: transparent;
-		height: 40px;
-		width: 250px;
-	}
-	
-	.tiempo {
-		position: absolute;
-		background-color: transparent;
-		left: 30px;
-		width: 290px;
-		top: 560px;
-	}
-	
-	#tiempodos {
-		outline: none;
-		border: solid 1px #B51A00;
-		background-color: transparent;
-		height: 40px;
-		width: 250px;
-	}
-	
-	.donde {
-		position: absolute;
-		background-color: transparent;
-		text-align: left;
-		left: 30px;
-		width: 200px;
-		top: 640px;
-	}
-	
-	textarea {
-		background-color: transparent;
-		border: solid 1px #B51A00;
-		resize: none;
-		font-family: 'Handlee', sans-serif;
-		font-size: 23px;
-		padding-left: 8px;
-		padding-right: 8px;
-		color: #B51A00;
-		outline: none;
-		width: 250px;
-		height: 70px;
-	}
-	
-	#usebut {
-		position: absolute;
-		left: 30px;
-		top: 640px;
-	}
-	
-	#sendMessage {
-		-webkit-appearance: none;
-		position: absolute;
-		left: 30px;
-		top: 760px;
-		cursor: pointer;
-		height: 40px;
-		width: 90px;
-		font-family: 'Lato', sans-serif;
-		font-size: 20px;
-		outline: none;
-		text-decoration: none;
-		border: 2px solid #B51A00;
-		background-color: black;
-		color: white;
-		border-radius: 10px;
-	}
-	
-	#thanks {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 500px;
-		width: 100%;
-		height: 800px;
-		background-color: transparent;
-		z-index: 1001;
-		overflow: hidden;
-	}
-	
-	
-	.aftersent {
-		position: absolute;
-		left: 0;
-		right: -250%;
-		top: 250px;
-		font-size: 28px;
-		color: white;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		z-index: 19;
-		line-height: 40px;
-	}
-	
-	.aftersent2 {
-		position: absolute;
-		left: 0;
-		right: -250%;
-		top: 330px;
-		font-size: 28px;
-		color: white;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		z-index: 19;
-		line-height: 40px;
-	}
-	
-	#afterlogo {
-		position: absolute;
-		top: 450px;
-		left: 0;
-		right: -250%;
-		margin: auto;
-		text-align: center;
-		border-radius: 220px;
-		height: 100px;
-		width: 300px;
-		background-image: url("http://i.imgur.com/cBAFUZv.png");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: 100%;
-	}
-	
-	#phonetwo {
-		position: absolute;
-		left: 0;
-		right: 23%;
-		top: 625px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 22px;
-		color: white;
-		z-index: 19;
-	}
-	
-	#diffcolortwo {
-		position: absolute;
-		left: 0;
-		right: 23%;
-		top: 650px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 22px;
-		color: #B51A00;
-		z-index: 19;
-	}
-	
-	#mailstattwo {
-		position: absolute;
-		left: 12%;
-		right: 0;
-		top: 625px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 23px;
-		color: white;
-		z-index: 19;
-	}
-	
-	#maildifftwo {
-		position: absolute;
-		left: 12%;
-		right: 0;
-		top: 650px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 23px;
-		color: #B51A00;
-		z-index: 49;
-	}
-	
-	.remform {
-		display: none;
-	}
-	
-	.goaway {
-		display: none;
-	}
-	
-	#bottom {
-		position: absolute;
-		top: 1630px;
-		left: 0;
-		right: 0;
-		height: 120px;
-		z-index: 8000;
-		background-color: black;
-	}
-	
-	.menutwo {
-		position: absolute;
-		display: none;
-	}
-	
-	#imgbotl {
-		position: absolute;
-		left: 12%;
-		text-align: center;
-		right: 0;
-		top: 100px;
-		height: 150px;
-		width: 300px;
-		background-image: url("http://i.imgur.com/cBAFUZv.png");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: 100%;
-		z-index: 11000;
-	}
-	
-	#endstuf {
-		position: absolute;
-		font-family: 'Handlee', sans-serif;
-		font-size: 14px;
-		color: white;
-		top: 170px;
-		left: 0;
-		right: 0;
-		text-align: center;
-		z-index: 8000;
-	}
+@media all and (max-width:1024px) {
+    .top,body {
+        width: 100%;
+        background-color: #000
+    }
+
+    body {
+        overflow: visible;
+        overflow-x: hidden;
+        height: auto
+    }
+
+    #need,.top {
+        position: absolute;
+        left: 0;
+        right: 0
+    }
+
+    .top {
+        height: 90px;
+        top: 50px
+    }
+
+    #need,#tacos {
+        color: #fff;
+        font-family: 'Handlee',sans-serif
+    }
+
+    #need {
+        text-align: center;
+        top: -15px;
+        font-size: 26px
+    }
+
+    #tacos {
+        -webkit-appearance: none;
+        text-decoration: none;
+        top: -10px;
+        font-size: 23px;
+        border-radius: 2px;
+        height: 30px;
+        width: 190px;
+        border-color: transparent;
+        background-color: #b51a00;
+        cursor: pointer;
+        outline: none
+    }
+
+    #logoimg,#siteimg {
+        position: absolute;
+        left: 0;
+        right: 0
+    }
+
+    #siteimg {
+        background-image: url(http://i.imgur.com/waq1vxF.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 140px;
+        height: 310px
+    }
+
+    #logoimg {
+        top: 30%;
+        text-align: center;
+        height: auto;
+        width: 100%;
+        background-color: transparent
+    }
+
+    img {
+        position: relative;
+        height: 150px;
+        width: 300px;
+        border-radius: 10px
+    }
+
+    .littleme,.menuwrap {
+        left: 0;
+        right: 0;
+        height: 50px
+    }
+
+    #alm,.menuwrap {
+        top: 0;
+        z-index: 10001
+    }
+
+    .menuwrap {
+        transform: translate3d(0,0,0);
+        width: 100%;
+        display: inline;
+        position: fixed
+    }
+
+    #alm {
+        position: absolute;
+        height: 48px;
+        left: 0
+    }
+
+    #alm2 {
+        height: 48px;
+        width: 140px
+    }
+
+    .littleme {
+        display: initial;
+        text-align: center;
+        z-index: 10000;
+        overflow: visible;
+        background-color: #000;
+        opacity: 1;
+        margin: 0
+    }
+
+    .othermenu,.toggle,.toggle+a {
+        display: none;
+        left: 0;
+        right: 0;
+        text-align: center
+    }
+
+    .toggle {
+        display: block;
+        text-align: right;
+        background-color: #000;
+        opacity: 1;
+        top: 3px;
+        position: absolute;
+        color: #b51a00;
+        font-size: 48px;
+        font-weight: 100;
+        line-height: 45px;
+        text-decoration: none;
+        font-family: 'Material Icons',sans-serif;
+        z-index: 7000
+    }
+
+    #drop:checked+label {
+        color: #b51a00
+    }
+
+    [id^=drop]:checked+label+ul {
+        display: block
+    }
+
+    .littleme ul,.littleme ul li {
+        left: -7.5%;
+        right: 7.5%;
+        text-align: center
+    }
+
+    .littleme ul li {
+        display: block;
+        width: 100%;
+        z-index: 6000;
+        border: none;
+        font-family: 'Handlee',sans-serif
+    }
+
+    .littleme ul {
+        padding: 0;
+        list-style: none;
+        position: relative
+    }
+
+    .menu {
+        position: absolute;
+        display: none
+    }
+
+    #container {
+        top: 450px;
+        height: 1150px;
+        background-image: url(http://i.imgur.com/FZDtDqG.jpg);
+        background-position: center;
+        background-repeat: repeat;
+        opacity: .6;
+        z-index: 999
+    }
+
+    #container,#formhead,.forma {
+        position: absolute;
+        left: 0;
+        right: 0
+    }
+
+    #formhead {
+        font-size: 31px;
+        font-family: 'Handlee',sans-serif;
+        color: #fff;
+        top: 600px;
+        text-align: center;
+        z-index: 5000;
+        transition: .2s
+    }
+
+    .forma {
+        top: 640px;
+        height: 1050px;
+        width: 100%;
+        text-align: left;
+        z-index: 1002;
+        background-color: transparent;
+        transition: .35s;
+        overflow: hidden
+    }
+
+    #diffcolor,#maildiff,#mailstat,#phone {
+        position: absolute;
+        display: none
+    }
+
+    #actform,input {
+        font-family: 'Handlee',sans-serif
+    }
+
+    #actform {
+        position: absolute;
+        top: 90px;
+        height: 1050px;
+        left: 0;
+        right: 0;
+        z-index: 1002;
+        font-size: 21px;
+        color: #fff;
+        background-color: transparent
+    }
+
+    input {
+        background-color: #000;
+        font-size: 22px;
+        color: #b51a00;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin: auto
+    }
+
+    .nombre {
+        left: 30px;
+        width: 50px;
+        top: 0
+    }
+
+    #correodos,#nombredos {
+        outline: none;
+        border: solid 1px #b51a00;
+        background-color: transparent;
+        height: 40px;
+        width: 250px
+    }
+
+    .correo,.nombre,.telefo {
+        position: absolute;
+        background-color: transparent
+    }
+
+    .correo {
+        left: 30px;
+        width: 50px;
+        top: 160px
+    }
+
+    .telefo {
+        width: 150px;
+        top: 80px
+    }
+
+    #telefodos,.cuantos,.telefo {
+        left: 30px
+    }
+
+    .cuantos {
+        position: absolute;
+        width: 130px;
+        top: 240px
+    }
+
+    #cuantosdos,#diados,#etedos,#telefodos,#tiempodos,#tipodos {
+        outline: none;
+        border: solid 1px #b51a00;
+        background-color: transparent;
+        height: 40px;
+        width: 250px
+    }
+
+    .cuantos,.ete,.tipo {
+        background-color: transparent
+    }
+
+    .tipo {
+        position: absolute;
+        left: 30px;
+        width: 290px;
+        top: 400px
+    }
+
+    .ete {
+        top: 320px
+    }
+
+    .dia,.ete,.tiempo {
+        position: absolute;
+        left: 30px;
+        width: 290px
+    }
+
+    .dia {
+        background-color: transparent;
+        top: 480px
+    }
+
+    .tiempo {
+        top: 560px
+    }
+
+    .donde,.tiempo,textarea {
+        background-color: transparent
+    }
+
+    .donde {
+        text-align: left;
+        width: 200px
+    }
+
+    textarea {
+        border: solid 1px #b51a00;
+        resize: none;
+        font-family: 'Handlee',sans-serif;
+        font-size: 23px;
+        padding-left: 8px;
+        padding-right: 8px;
+        color: #b51a00;
+        outline: none;
+        width: 250px;
+        height: 70px
+    }
+
+    #sendMessage,#usebut,.donde {
+        position: absolute;
+        left: 30px;
+        top: 640px
+    }
+
+    #sendMessage {
+        -webkit-appearance: none;
+        top: 760px;
+        cursor: pointer;
+        height: 40px;
+        width: 90px;
+        font-family: 'Lato',sans-serif;
+        font-size: 20px;
+        outline: none;
+        text-decoration: none;
+        border: 2px solid #b51a00;
+        background-color: #000;
+        color: #fff;
+        border-radius: 10px
+    }
+
+    #thanks,.aftersent {
+        position: absolute;
+        left: 0
+    }
+
+    #thanks {
+        right: 0;
+        width: 100%;
+        height: 800px;
+        background-color: transparent;
+        overflow: hidden;
+        top: 500px;
+        z-index: 1001
+    }
+
+    .aftersent {
+        top: 250px;
+        font-size: 28px;
+        color: #fff;
+        font-family: 'Handlee',sans-serif;
+        z-index: 19;
+        line-height: 40px
+    }
+
+    #afterlogo,.aftersent,.aftersent2 {
+        text-align: center;
+        right: -250%
+    }
+
+    .aftersent2 {
+        font-size: 28px;
+        color: #fff;
+        font-family: 'Handlee',sans-serif;
+        z-index: 19;
+        line-height: 40px;
+        top: 330px
+    }
+
+    #afterlogo,#phonetwo,.aftersent2 {
+        position: absolute;
+        left: 0
+    }
+
+    #afterlogo {
+        margin: auto;
+        border-radius: 220px;
+        height: 100px;
+        width: 300px;
+        background-image: url(http://i.imgur.com/cBAFUZv.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        top: 450px
+    }
+
+    #phonetwo {
+        right: 23%;
+        top: 625px;
+        font-size: 22px;
+        color: #fff
+    }
+
+    #diffcolortwo,#mailstattwo,#phonetwo {
+        text-align: center;
+        font-family: 'Handlee',sans-serif;
+        z-index: 19
+    }
+
+    #diffcolortwo {
+        position: absolute;
+        right: 23%;
+        left: 0;
+        top: 650px;
+        font-size: 22px;
+        color: #b51a00
+    }
+
+    #mailstattwo {
+        left: 12%;
+        top: 625px;
+        font-size: 23px;
+        color: #fff
+    }
+
+    #bottom,#maildifftwo,#mailstattwo {
+        position: absolute;
+        right: 0
+    }
+
+    #maildifftwo {
+        text-align: center;
+        font-family: 'Handlee',sans-serif;
+        font-size: 23px;
+        color: #b51a00;
+        left: 12%;
+        top: 650px;
+        z-index: 49
+    }
+
+    .goaway,.menutwo,.remform {
+        display: none
+    }
+
+    #bottom {
+        top: 1630px;
+        left: 0;
+        height: 120px;
+        z-index: 8000;
+        background-color: #000
+    }
+
+    .menutwo {
+        position: absolute
+    }
+
+    #endstuf,#imgbotl {
+        position: absolute;
+        right: 0;
+        text-align: center
+    }
+
+    #imgbotl {
+        height: 150px;
+        width: 300px;
+        background-image: url(http://i.imgur.com/cBAFUZv.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        left: 12%;
+        top: 100px;
+        z-index: 11000
+    }
+
+    #endstuf {
+        font-family: 'Handlee',sans-serif;
+        font-size: 14px;
+        color: #fff;
+        top: 170px;
+        left: 0;
+        z-index: 8000
+    }
 }
