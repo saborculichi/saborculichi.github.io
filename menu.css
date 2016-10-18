@@ -1,2673 +1,2157 @@
 body {
-	height: auto;
-	width: 100%;
-	overflow: visible;
-	background-color: black;
-	margin: auto;
+    height: auto;
+    width: 100%;
+    overflow: visible;
+    background-color: #000;
+    margin: auto
 }
 
 #spoon {
-	position: absolute;
-	display: none;
-	left: 0;
-	right: 0;
-	top: 1050px;
-	height: 260px ;
-	width: 150px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: url("http://i.imgur.com/OdTsPfs.png");	
-	background-size: 100%;
-	z-index: 1000;
-	text-align: center;
-	margin: auto;
-	background-color: transparent;
-	transition: .5s;
+    position: absolute;
+    display: none;
+    left: 0;
+    right: 0;
+    top: 1050px;
+    height: 260px;
+    width: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(http://i.imgur.com/OdTsPfs.png);
+    background-size: 100%;
+    z-index: 1000;
+    text-align: center;
+    margin: auto;
+    background-color: transparent;
+    transition: .5s
 }
 
 #wood {
-	position: absolute;
-	display: none;
-	right: 30px;
-	top: 630px;
-	height: 330px ;
-	width: 250px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: url("http://i.imgur.com/9YT2VWW.png");	
-	background-size: 100%;
-	z-index: 1000;
-	background-color: transparent;
-	transition: .8s;
+    right: 30px;
+    top: 630px;
+    height: 330px;
+    width: 250px;
+    background-image: url(http://i.imgur.com/9YT2VWW.png);
+    transition: .8s
+}
+
+#green,#guisosdoe,#rice,#wood {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    display: none
 }
 
 #green {
-	position: absolute;
-	left: 20px;
-	top: 670px;
-	height: 200px ;
-	width: 290px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: url("http://i.imgur.com/WpmxPPP.png");	
-	background-size: 100%;
-	z-index: 1000;
-	background-color: transparent;
-	transition: .6s;
-	display: none;
+    left: 20px;
+    top: 670px;
+    background-image: url(http://i.imgur.com/WpmxPPP.png);
+    height: 200px;
+    width: 290px;
+    transition: .6s
+}
+
+#guisosdoe,#rice {
+    height: 330px;
+    width: 250px;
+    transition: .8s
 }
 
 #guisosdoe {
-	position: absolute;
-	display: none;
-	left: 40px;
-	top: 1540px;
-	height: 330px ;
-	width: 250px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: url("http://i.imgur.com/dRy6YJv.png");	
-	background-size: 100%;
-	z-index: 1000;
-	background-color: transparent;
-	transition: .8s;
-}	
+    left: 40px;
+    top: 1540px;
+    background-image: url(http://i.imgur.com/dRy6YJv.png)
+}
 
 #rice {
-	position: absolute;
-	right: 10px;
-	top: 1800px;
-	height: 330px ;
-	width: 250px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: url("http://i.imgur.com/NEFd4YV.png");	
-	background-size: 100%;
-	z-index: 1000;
-	background-color: transparent;
-	transition: .8s;
-	display: none;
+    right: 10px;
+    top: 1800px;
+    background-image: url(http://i.imgur.com/NEFd4YV.png)
+}
+
+#need,.top {
+    position: absolute;
+    left: 0;
+    right: 0
 }
 
 .top {
-	position: absolute;
-	top: 0;
-	height: 50px;
-	left: 0;
-	right: 0;
-	width: 100%;
-	background-color: black;
-	opacity: 1;
-	overflow: hidden;
+    height: 50px;
+    width: 100%;
+    background-color: #000;
+    opacity: 1;
+    overflow: hidden;
+    top: 0
+}
+
+#need,#tacos {
+    color: #fff;
+    font-family: 'Handlee',sans-serif
 }
 
 #need {
-	position: absolute;
-	top: -7px;
-	left: 0;
-	right: 0;
-	text-align: center;
-	color: white;
-	font-family: 'Handlee', sans-serif;
-	font-size: 19px;
+    text-align: center;
+    top: -7px;
+    font-size: 19px
 }
 
 #tacos {
-	-webkit-appearance: none;
-	text-decoration: none;
-	color: white;
-	top: -10px;
-	font-size: 17px;
-	border-radius: 2px;
-	height: 30px;
-	width: 130px;
-	border-color: transparent;
-	background-color: #B51A00;
-	font-family: 'Handlee', sans-serif;
-	cursor: pointer;
-	outline: none;
+    -webkit-appearance: none;
+    text-decoration: none;
+    top: -10px;
+    font-size: 17px;
+    border-radius: 2px;
+    height: 30px;
+    width: 130px;
+    border-color: transparent;
+    background-color: #b51a00;
+    cursor: pointer;
+    outline: none
+}
+
+#logoimg,#siteimg {
+    left: 0;
+    right: 0;
+    width: 100%
 }
 
 #siteimg {
-	position: absolute;
-	top: 50px;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 400px;
-	background-image: url("http://i.imgur.com/m3YnLVc.jpg");
-	background-size: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	overflow: hidden;
-	z-index: 1;
+    position: absolute;
+    background-image: url(http://i.imgur.com/m3YnLVc.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: 1;
+    top: 50px;
+    height: 400px
 }
 
 #logoimg {
-	position: absolute;
-	top: 30%;
-	left: 0;
-	right: 0;
-	text-align: center;
-	height: auto;
-	width: 100%;
-	background-color: transparent;
+    top: 30%;
+    text-align: center;
+    height: auto;
+    background-color: transparent
 }
 
 img {
-	position: relative;
-	height: 150px;
-	width: 300px;
-	border-radius: 10px;
+    position: relative;
+    height: 150px;
+    width: 300px;
+    border-radius: 10px
 }
 
-.menuwrap {
-	position: absolute;
-	display: none;
+#logoimg,.menuwrap {
+    position: absolute
 }
 
-.littleme p { text-align: right; }
- .toggle, [id^=drop] {
- display: none;
+.littleme p {
+    text-align: right
 }
 
-/*Dropdown Menu for mobile site. Hidden on desktop*/
+.littleme,.menuwrap,.toggle,[id^=drop] {
+    display: none
+}
+
 .littleme {
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  text-align: right;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  display: none;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    position: absolute
 }
 
 .littleme:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both
 }
 
 .littleme ul {
-  padding: 0;
-  left: -6%;
-  right: 6%;
-  list-style: none;
-  position: relative;
-  text-align: center;
+    padding: 0;
+    left: -6%;
+    right: 6%;
+    list-style: none;
+    position: relative;
+    text-align: center
+}
+
+.littleme a,.littleme ul li {
+    text-align: center;
+    opacity: 1;
+    display: block;
+    background-color: #b51a00
 }
 
 .littleme ul li {
-  left: -6%;
-  right: 6%;
-  text-align: center;
-  height: auto;
-  width: 100%;
-  display: block;
-  background-color: #B51A00;
-  opacity: 1;
+    height: auto;
+    width: 100%;
+    left: -6%;
+    right: 6%
 }
 
 .littleme a {
-  text-align: center;
-  opacity: 1;
-  left: 0;
-  right: 0;
-  display: block;
-  background-color: #B51A00;
-  color: #FFF;
-  font-size: 20px;
-  font-family: ;
-  line-height: 45px;
-  text-decoration: none;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 45px;
+    text-decoration: none
 }
 
-.littleme li > a:after { content: ' +';}
+.littleme li>a:after {
+    content: ' +'
+}
 
-.littleme li > a:only-child:after { content: ''; }
+.littleme li>a:only-child:after {
+    content: ''
+}
+
+.menu,.toma {
+    background-color: #000
+}
 
 .menu {
-	position: absolute;
-	top: 450px;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 95px;
-	z-index: 7000;
-	background-color: black;
-	overflow: hidden;
+    left: 0;
+    right: 0;
+    z-index: 7000;
+    overflow: hidden;
+    position: absolute;
+    top: 450px;
+    width: 100%;
+    height: 95px
 }
 
 .toma {
-	position: relative;
-	height: 30px;
-	width: 30px;
-	top: 5px;
-	background-color: black;
-	opacity: 0;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    top: 5px;
+    opacity: 0
 }
 
 #menutext {
-	position: absolute;
-	overflow: hidden;
-	left: -80px;
-	right: 0;
-	top: -5px;
-	bottom: 0;
-	list-style: none;
-	font-family: 'Handlee', sans-serif;
-	font-size: 15px;
-	color: white;
-	text-align: center;
-	vertical-align: middle;
+    position: absolute;
+    overflow: hidden;
+    left: -80px;
+    right: 0;
+    top: -5px;
+    bottom: 0;
+    list-style: none;
+    font-family: 'Handlee',sans-serif;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle
 }
 
-
 li {
-	display: inline;
-	padding: 0px 30px;
+    display: inline;
+    padding: 0 30px
 }
 
 a {
-	text-decoration: none;
-	outline: none;
-	color: white;
+    text-decoration: none;
+    outline: none;
+    color: #fff
 }
 
 a:hover .toma {
-	opacity: 1;
-	top: 5px;
-	transition: .7s;
+    opacity: 1;
+    top: 5px;
+    transition: .7s
 }
 
 .fixed {
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	height: 95px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 95px
 }
 
 .info {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 580px;
-	height: 2650px;
-	width: 100%;
-	z-index: 1001;
-	background-color: transparent;
-	transition: ease-out .4s all;
-	overflow: hidden;
+    top: 580px;
+    height: 2650px;
+    width: 100%;
+    z-index: 1001;
+    background-color: transparent;
+    transition: ease-out .4s all;
+    overflow: hidden
 }
 
 #container {
-	position: absolute;
-	top: 450px;
-	left: 0;
-	right: 0;
-	height: 2700px;
-	background-image: url("http://i.imgur.com/FZDtDqG.jpg");
-	background-position: center;
-	background-repeat: repeat;
-	opacity: .6;
-	overflow: hidden;
+    top: 450px;
+    height: 2700px;
+    background-image: url(http://i.imgur.com/FZDtDqG.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    opacity: .6;
+    overflow: hidden
 }
-	
+
+#container,#formhead,#taquiza,.info {
+    position: absolute;
+    left: 0;
+    right: 0
+}
 
 #formhead {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 10px;
-	text-align: center;
-	font-size: 42px;
-	font-family: 'Handlee', sans-serif;
-	color: white;
-	z-index: 5000;
+    text-align: center;
+    font-size: 42px;
+    font-family: 'Handlee',sans-serif;
+    color: #fff;
+    z-index: 5000;
+    top: 10px
 }
 
 #taquiza {
-	position: absolute;
-	top: 130px;
-	left: 0;
-	height: 1000px;
-	right: 0;
-	transition: .5s ease-out;
+    top: 130px;
+    height: 1000px;
+    transition: .5s ease-out
 }
 
-#taquizatext {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 42px;
-	color: #B51A00;
+#tacova,#taquizatext,.include {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    font-size: 42px;
+    color: #b51a00
 }
 
-.include {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 55px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 29px;
-	color: white;
+#tacova,.include {
+    top: 55px;
+    font-size: 29px;
+    color: #fff
 }
 
 #tacova {
-	position: absolute;
-	left: -15px;
-	right: 0;
-	top: 150px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    left: -15px;
+    top: 150px;
+    font-size: 25px;
+    z-index: 3000
 }
 
 #difftacova {
-	position: absolute;
-	left: -380px;
-	right: 0;
-	top: 153px;
-	text-align: center;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 23px;
-	color: white;
+    left: -380px;
+    top: 153px;
+    font-family: 'Material Icons',sans-serif;
+    font-size: 23px
+}
+
+#diffmeat,#difftacova,#meat,#salsa {
+    position: absolute;
+    right: 0;
+    text-align: center;
+    color: #fff
 }
 
 #meat {
-	position: absolute;
-	left: -65px;
-	right: 0;
-	top: 180px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    z-index: 3000;
+    left: -65px;
+    top: 180px;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px
 }
 
-#diffmeat {
-	position: absolute;
-	left: -380px;
-	right: 0;
-	top: 183px;
-	text-align: center;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 23px;
-	color: white;
+#diffmeat,#salsa {
+    left: -380px;
+    top: 183px;
+    font-family: 'Material Icons',sans-serif;
+    font-size: 23px
 }
 
 #salsa {
-	position: absolute;
-	left: 5px;
-	right: 0;
-	top: 210px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    left: 5px;
+    top: 210px;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px;
+    z-index: 3000
 }
 
 #diffsalsa {
-	position: absolute;
-	left: -380px;
-	right: 0;
-	top: 213px;
-	text-align: center;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 23px;
-	color: white;
+    left: -380px;
+    top: 213px;
+    font-family: 'Material Icons',sans-serif;
+    font-size: 23px
+}
+
+#agua,#diffsalsa,#diffsides,#sides {
+    position: absolute;
+    right: 0;
+    text-align: center;
+    color: #fff
 }
 
 #sides {
-	position: absolute;
-	left: -105px;
-	right: 0;
-	top: 240px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    z-index: 3000;
+    left: -105px;
+    top: 240px;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px
 }
 
-#diffsides {
-	position: absolute;
-	left: -380px;
-	right: 0;
-	top: 243px;
-	text-align: center;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 23px;
-	color: white;
+#agua,#diffsides {
+    left: -380px;
+    top: 243px;
+    font-family: 'Material Icons',sans-serif;
+    font-size: 23px
 }
 
 #agua {
-	position: absolute;
-	left: -138px;
-	right: 0;
-	top: 270px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    left: -138px;
+    top: 270px;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px;
+    z-index: 3000
 }
 
 #diffagua {
-	position: absolute;
-	left: -380px;
-	right: 0;
-	top: 273px;
-	text-align: center;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 23px;
-	color: white;
+    left: -380px;
+    top: 273px;
+    font-family: 'Material Icons',sans-serif;
+    font-size: 23px
+}
+
+#cups,#diffagua,#diffcups,#typesof {
+    position: absolute;
+    right: 0;
+    text-align: center;
+    color: #fff
 }
 
 #cups {
-	position: absolute;
-	left: 0px;
-	right: 0;
-	top: 300px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    z-index: 3000;
+    left: 0;
+    top: 300px;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px
 }
 
-#diffcups {
-	position: absolute;
-	left: -380px;
-	right: 0;
-	top: 303px;
-	text-align: center;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 23px;
-	color: white;
+#diffcups,#typesof {
+    left: -380px;
+    top: 303px;
+    font-family: 'Material Icons',sans-serif;
+    font-size: 23px
 }
 
 #typesof {
-	position: absolute;
-	left: 0;
-	right: 50%;
-	top: 385px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 29px;
-	color: white;
-	text-decoration: underline;
-	z-index: 3000;
+    left: 0;
+    right: 50%;
+    top: 385px;
+    font-family: 'Handlee',sans-serif;
+    font-size: 29px;
+    text-decoration: underline;
+    z-index: 3000
 }
 
-/*Split Here 	background-image: url("http://www.tioluchin.com/img/bg-guisado.jpg");
-	background-position: center;
-	background-repeat: repeat;*/
 #asada {
-	position: absolute;
-	left: 0;
-	right: 50%;
-	top: 440px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    left: 0;
+    right: 50%;
+    top: 440px;
+    font-size: 25px
+}
+
+#asada,#chick,#tripas {
+    position: absolute;
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    color: #fff;
+    z-index: 3000
 }
 
 #tripas {
-	position: absolute;
-	left: 0;
-	right: 50%;
-	top: 470px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    left: 0;
+    right: 50%;
+    font-size: 25px;
+    top: 470px
 }
 
 #chick {
-	position: absolute;
-	left: 0;
-	right: 50%;
-	top: 500px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    top: 500px
+}
+
+#ado,#chick,#rizo {
+    left: 0;
+    right: 50%;
+    font-size: 25px
 }
 
 #ado {
-	position: absolute;
-	left: 0;
-	right: 50%;
-	top: 530px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    position: absolute;
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    color: #fff;
+    z-index: 3000;
+    top: 530px
 }
 
-#rizo{
-	position: absolute;
-	left: 0;
-	right: 50%;
-	top: 560px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+#rizo {
+    top: 560px
+}
+
+#nita,#rizo,#soy {
+    position: absolute;
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    color: #fff;
+    z-index: 3000
 }
 
 #soy {
-	position: absolute;
-	left: 0;
-	right: 50%;
-	top: 590px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    left: 0;
+    right: 50%;
+    font-size: 25px;
+    top: 590px
 }
 
 #nita {
-	position: absolute;
-	left: 0;
-	right: 50%;
-	top: 620px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    top: 620px
+}
+
+#beza,#gua,#nita {
+    left: 0;
+    right: 50%;
+    font-size: 25px
 }
 
 #beza {
-	position: absolute;
-	left: 0;
-	right: 50%;
-	top: 650px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    position: absolute;
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    color: #fff;
+    z-index: 3000;
+    top: 650px
 }
 
 #gua {
-	position: absolute;
-	left: 0;
-	right: 50%;
-	top: 680px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    top: 680px
 }
 
-
-
-
-/*Yuuuupp Split Here*/
+#ceb,#gua,#hor,#waterof {
+    position: absolute;
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    color: #fff;
+    z-index: 3000
+}
 
 #waterof {
-	position: absolute;
-	left: 50%;
-	right: 0;
-	top: 385px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 29px;
-	color: white;
-	text-decoration: underline;
-	z-index: 3000;
+    left: 50%;
+    right: 0;
+    top: 385px;
+    text-decoration: underline;
+    font-size: 29px
+}
+
+#ceb,#hor {
+    font-size: 25px
 }
 
 #hor {
-	position: absolute;
-	left: 50%;
-	right: 0;
-	top: 440px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    left: 50%;
+    right: 0;
+    top: 440px
 }
 
 #ceb {
-	position: absolute;
-	left: 50%;
-	right: 0;
-	top: 470px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    top: 470px
+}
+
+#ceb,#jam,#lim {
+    left: 50%;
+    right: 0
 }
 
 #jam {
-	position: absolute;
-	left: 50%;
-	right: 0;
-	top: 500px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    position: absolute;
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px;
+    color: #fff;
+    z-index: 3000;
+    top: 500px
 }
 
 #lim {
-	position: absolute;
-	left: 50%;
-	right: 0;
-	top: 530px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    top: 530px
+}
+
+#lim,#melon,#pina {
+    position: absolute;
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px;
+    color: #fff;
+    z-index: 3000
 }
 
 #melon {
-	position: absolute;
-	left: 50%;
-	right: 0;
-	top: 560px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    left: 50%;
+    right: 0;
+    top: 560px
 }
 
 #pina {
-	position: absolute;
-	left: 50%;
-	right: 0;
-	top: 590px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    top: 590px
+}
+
+#pina,#san,#tama {
+    left: 50%;
+    right: 0
 }
 
 #san {
-	position: absolute;
-	left: 50%;
-	right: 0;
-	top: 620px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    position: absolute;
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px;
+    color: #fff;
+    z-index: 3000;
+    top: 620px
 }
 
 #tama {
-	position: absolute;
-	left: 50%;
-	right: 0;
-	top: 650px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    top: 650px
+}
+
+#costr,#fres,#peopler,#tama {
+    position: absolute;
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px;
+    color: #fff;
+    z-index: 3000
 }
 
 #fres {
-	position: absolute;
-	left: 50%;
-	right: 0;
-	top: 680px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    top: 680px;
+    left: 50%;
+    right: 0
 }
 
-/*Another Split*/
+#costr,#peopler {
+    left: -90px;
+    right: 50%
+}
 
 #peopler {
-	position: absolute;
-	left: -90px;
-	right: 50%;
-	top: 825px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
-	text-decoration: underline;
+    text-decoration: underline;
+    top: 825px
 }
 
 #costr {
-	position: absolute;
-	left: -90px;
-	right: 50%;
-	top: 865px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    top: 865px
 }
 
 #seventyr {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 825px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
-	text-decoration: underline;
+    left: 0;
+    right: 0;
+    top: 825px;
+    text-decoration: underline
+}
+
+#hunedcostr,#hunedr,#seventycostr,#seventyr {
+    position: absolute;
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px;
+    color: #fff;
+    z-index: 3000
 }
 
 #seventycostr {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 865px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    top: 865px;
+    left: 0;
+    right: 0
+}
+
+#hunedcostr,#hunedr {
+    left: 50%;
+    right: -90px
 }
 
 #hunedr {
-	position: absolute;
-	left: 50%;
-	right: -90px;
-	top: 825px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
-	text-decoration: underline;
+    text-decoration: underline;
+    top: 825px
 }
 
 #hunedcostr {
-	position: absolute;
-	left: 50%;
-	right: -90px;
-	top: 865px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    top: 865px
 }
 
-
+#guisos,#guisostext {
+    position: absolute;
+    left: 0;
+    right: 0
+}
 
 #guisos {
-	position: absolute;
-	top: 1130px;
-	left: 0;
-	height: 600px;
-	right: 0;
+    height: 600px;
+    top: 1130px
 }
 
 #guisostext {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 42px;
-	color: #B51A00;
+    top: 0;
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    font-size: 42px;
+    color: #b51a00
+}
+
+#bistec,#diffbistec {
+    position: absolute;
+    right: 0;
+    color: #fff
 }
 
 #bistec {
-	position: absolute;
-	left: 350px;
-	right: 0;
-	top: 140px;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    z-index: 3000;
+    left: 350px;
+    top: 140px;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px
 }
 
 #diffbistec {
-	position: absolute;
-	left: -670px;
-	right: 0;
-	top: 143px;
-	text-align: center;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 23px;
-	color: white;
+    left: -670px;
+    top: 143px;
+    text-align: center;
+    font-family: 'Material Icons',sans-serif;
+    font-size: 23px
 }
 
 #cochi {
-	position: absolute;
-	left: 350px;
-	right: 0;
-	top: 170px;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    left: 350px;
+    top: 170px;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px;
+    z-index: 3000
+}
+
+#cochi,#diffcochi,#rajas {
+    position: absolute;
+    right: 0;
+    color: #fff
 }
 
 #diffcochi {
-	position: absolute;
-	left: -670px;
-	right: 0;
-	top: 173px;
-	text-align: center;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 23px;
-	color: white;
+    text-align: center;
+    left: -670px;
+    top: 173px;
+    font-family: 'Material Icons',sans-serif;
+    font-size: 23px
 }
 
 #rajas {
-	position: absolute;
-	left: 350px;
-	right: 0;
-	top: 200px;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    left: 350px;
+    top: 200px;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px;
+    z-index: 3000
 }
 
 #diffrajas {
-	position: absolute;
-	left: -670px;
-	right: 0;
-	top: 203px;
-	text-align: center;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 23px;
-	color: white;
+    left: -670px;
+    right: 0;
+    top: 203px;
+    text-align: center;
+    font-family: 'Material Icons',sans-serif;
+    font-size: 23px
+}
+
+#chich,#diffchich,#diffrajas,#mar {
+    position: absolute;
+    color: #fff
 }
 
 #chich {
-	position: absolute;
-	left: 350px;
-	top: 230px;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    left: 350px;
+    top: 230px;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px;
+    z-index: 3000
+}
+
+#diffchich,#mar {
+    right: 0
 }
 
 #diffchich {
-	position: absolute;
-	left: -670px;
-	right: 0;
-	top: 233px;
-	text-align: center;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 23px;
-	color: white;
+    text-align: center;
+    left: -670px;
+    top: 233px;
+    font-family: 'Material Icons',sans-serif;
+    font-size: 23px
 }
 
 #mar {
-	position: absolute;
-	left: 350px;
-	right: 0;
-	top: 260px;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    left: 350px;
+    top: 260px;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px;
+    z-index: 3000
 }
 
 #diffmar {
-	position: absolute;
-	left: -670px;
-	right: 0;
-	top: 263px;
-	text-align: center;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 23px;
-	color: white;
+    left: -670px;
+    top: 263px;
+    text-align: center;
+    font-family: 'Material Icons',sans-serif;
+    font-size: 23px
+}
+
+#diffmar,#diffrijol,#frijol {
+    position: absolute;
+    right: 0;
+    color: #fff
 }
 
 #frijol {
-	position: absolute;
-	left: 350px;
-	right: 0;
-	top: 290px;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    z-index: 3000;
+    left: 350px;
+    top: 290px;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px
 }
 
 #diffrijol {
-	position: absolute;
-	left: -670px;
-	right: 0;
-	top: 293px;
-	text-align: center;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 23px;
-	color: white;
+    left: -670px;
+    top: 293px;
+    text-align: center;
+    font-family: 'Material Icons',sans-serif;
+    font-size: 23px
 }
 
 #pollo {
-	position: absolute;
-	left: 350px;
-	right: 0;
-	top: 320px;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    left: 350px;
+    top: 320px;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px;
+    z-index: 3000
+}
+
+#diffpollo,#pollo,#tinga {
+    position: absolute;
+    right: 0;
+    color: #fff
 }
 
 #diffpollo {
-	position: absolute;
-	left: -670px;
-	right: 0;
-	top: 323px;
-	text-align: center;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 23px;
-	color: white;
+    text-align: center;
+    left: -670px;
+    top: 323px;
+    font-family: 'Material Icons',sans-serif;
+    font-size: 23px
 }
 
 #tinga {
-	position: absolute;
-	left: 350px;
-	right: 0;
-	top: 350px;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    left: 350px;
+    top: 350px;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px;
+    z-index: 3000
 }
 
 #difftinga {
-	position: absolute;
-	left: -670px;
-	right: 0;
-	top: 353px;
-	text-align: center;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 23px;
-	color: white;
+    left: -670px;
+    top: 353px;
+    text-align: center;
+    font-family: 'Material Icons',sans-serif;
+    font-size: 23px
+}
+
+#cama,#diffcama,#difftinga {
+    position: absolute;
+    right: 0;
+    color: #fff
 }
 
 #cama {
-	position: absolute;
-	left: 350px;
-	right: 0;
-	top: 380px;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    z-index: 3000;
+    left: 350px;
+    top: 380px;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px
 }
 
 #diffcama {
-	position: absolute;
-	left: -670px;
-	right: 0;
-	top: 383px;
-	text-align: center;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 23px;
-	color: white;
+    left: -670px;
+    top: 383px;
+    text-align: center;
+    font-family: 'Material Icons',sans-serif;
+    font-size: 23px
 }
 
 #puer {
-	position: absolute;
-	left: 350px;
-	right: 0;
-	top: 410px;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    left: 350px;
+    top: 410px;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px;
+    z-index: 3000
+}
+
+#diffpuer,#mach,#puer {
+    position: absolute;
+    right: 0;
+    color: #fff
 }
 
 #diffpuer {
-	position: absolute;
-	left: -670px;
-	right: 0;
-	top: 413px;
-	text-align: center;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 23px;
-	color: white;
+    text-align: center;
+    left: -670px;
+    top: 413px;
+    font-family: 'Material Icons',sans-serif;
+    font-size: 23px
 }
 
 #mach {
-	position: absolute;
-	left: 350px;
-	right: 0;
-	top: 440px;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    left: 350px;
+    top: 440px;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px;
+    z-index: 3000
+}
+
+#cost,#diffmach,#people {
+    position: absolute;
+    text-align: center;
+    color: #fff
 }
 
 #diffmach {
-	position: absolute;
-	left: -670px;
-	right: 0;
-	top: 443px;
-	text-align: center;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 23px;
-	color: white;
+    top: 443px;
+    left: -670px;
+    right: 0;
+    font-family: 'Material Icons',sans-serif;
+    font-size: 23px
+}
+
+#cost,#people {
+    left: -90px;
+    right: 50%;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px;
+    z-index: 3000
 }
 
 #people {
-	position: absolute;
-	left: -90px;
-	right: 50%;
-	top: 545px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
-	text-decoration: underline;
+    text-decoration: underline;
+    top: 545px
 }
 
 #cost {
-	position: absolute;
-	left: -90px;
-	right: 50%;
-	top: 585px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    top: 585px
 }
 
 #seventy {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 545px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
-	text-decoration: underline;
+    left: 0;
+    right: 0;
+    top: 545px;
+    text-decoration: underline
+}
+
+#huned,#hunedcost,#seventy,#seventycost {
+    position: absolute;
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px;
+    color: #fff;
+    z-index: 3000
 }
 
 #seventycost {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 585px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    top: 585px;
+    left: 0;
+    right: 0
+}
+
+#huned,#hunedcost {
+    left: 50%;
+    right: -90px
 }
 
 #huned {
-	position: absolute;
-	left: 50%;
-	right: -90px;
-	top: 545px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
-	text-decoration: underline;
+    text-decoration: underline;
+    top: 545px
 }
 
 #hunedcost {
-	position: absolute;
-	left: 50%;
-	right: -90px;
-	top: 585px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
-	z-index: 3000;
+    top: 585px
 }
 
 #extras {
-	position: absolute;
-	top: 1860px;
-	left: 0;
-	height: 400px;
-	right: 0;
+    position: absolute;
+    top: 1860px;
+    left: 0;
+    height: 400px;
+    right: 0
 }
 
 #extrastext {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 42px;
-	color: #B51A00;
+    left: 0;
+    top: 0;
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    font-size: 42px;
+    color: #b51a00
+}
+
+#creme,#extrastext,#guac {
+    position: absolute;
+    right: 0
 }
 
 #guac {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 150px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
+    left: 0;
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px;
+    color: #fff;
+    top: 150px
 }
 
 #creme {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 210px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
+    top: 210px
+}
+
+#arro,#choco,#creme {
+    left: 0;
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    font-size: 25px;
+    color: #fff
 }
 
 #choco {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 270px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
+    position: absolute;
+    right: 0;
+    top: 270px
 }
 
 #arro {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 330px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 25px;
-	color: white;
+    top: 330px
+}
+
+#arro,#bottom,#tacostwo {
+    position: absolute;
+    right: 0
 }
 
 #tacostwo {
-	-webkit-appearance: none;
-	position: absolute;
-	left: 45%;
-	right: 0;
-	text-decoration: none;
-	color: white;
-	top: 500px;
-	font-size: 17px;
-	border-radius: 8px;
-	height: 50px;
-	width: 170px;
-	border-color: transparent;
-	background-color: #B51A00;
-	font-family: 'Handlee', sans-serif;
-	cursor: pointer;
-	outline: none;
+    -webkit-appearance: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 8px;
+    width: 170px;
+    border-color: transparent;
+    font-family: 'Handlee',sans-serif;
+    cursor: pointer;
+    outline: none;
+    left: 45%;
+    top: 500px;
+    height: 50px;
+    background-color: #b51a00
 }
 
 #bottom {
-	position: absolute;
-	top: 2930px;
-	left: 0;
-	right: 0;
-	height: 390px;
-	z-index: 8000;
-	overflow: hidden;
-	background-color: black;
+    top: 2930px;
+    left: 0;
+    height: 390px;
+    z-index: 8000;
+    overflow: hidden;
+    background-color: #000
+}
+
+#menutexttwo,.menutwo {
+    position: absolute;
+    right: 0;
+    bottom: 0
 }
 
 .menutwo {
-	position: absolute;
-	top: 250px;
-	left: 0;
-	right: 0;
-	width: 100%;
-	bottom: 0;
-	background-color: black;
+    width: 100%;
+    background-color: #000;
+    top: 250px;
+    left: 0
 }
 
 #menutexttwo {
-	position: absolute;
-	left: -80px;
-	right: 0;
-	top: 20%;
-	bottom: 0;
-	list-style: none;
-	font-family: 'Handlee', sans-serif;
-	font-size: 15px;
-	color: white;
-	text-align: center;
-	vertical-align: middle;
+    left: -80px;
+    top: 20%;
+    list-style: none;
+    font-family: 'Handlee',sans-serif;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle
+}
+
+#endstuf,#imgbotl,#imgleft {
+    position: absolute;
+    z-index: 8000
 }
 
 #endstuf {
-	position: absolute;
-	font-family: 'Handlee', sans-serif;
-	font-size: 14px;
-	color: white;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	text-align: center;
-	z-index: 8000;
-	background-color: black;
+    font-family: 'Handlee',sans-serif;
+    font-size: 14px;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #000
+}
+
+#imgbotl,#imgleft {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%
 }
 
 #imgbotl {
-	position: absolute;
-	right: 0;
-	top: -30px;
-	height: 300px;
-	width: 400px;
-	background-image: url("http://i.imgur.com/cBAFUZv.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	z-index: 8000;
+    right: 0;
+    top: -30px;
+    height: 300px;
+    width: 400px;
+    background-image: url(http://i.imgur.com/cBAFUZv.png)
 }
 
 #imgleft {
-	position: absolute;
-	left: 45px;
-	top: 35px;
-	height: 150px;
-	width: 300px;
-	background-image: url("http://i.imgur.com/8siXjwQ.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	border-radius: 120px;
-	z-index: 8000;
-	background-color: yellow;
+    left: 45px;
+    top: 35px;
+    height: 150px;
+    width: 300px;
+    background-image: url(http://i.imgur.com/8siXjwQ.jpg);
+    border-radius: 120px;
+    background-color: #ff0
 }
 
-
-#con {
-	position: absolute;
-	top: 20px;
-	left: 0;
-	right: 0;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	color: white;
-	font-size: 26px;
+#colmail,#colnum,#con,#mail,#numba {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    color: #fff;
+    font-size: 26px
 }
 
-#numba {
-	position: absolute;
-	left: -140px;
-	top: 90px;
-	right: 0;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	color: white;
-	font-size: 22px;
+#colmail,#colnum,#mail,#numba {
+    left: -140px;
+    top: 90px;
+    font-size: 22px
 }
 
-#colnum {
-	position: absolute;
-	left: 60px;
-	top: 90px;
-	right: 0;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	color: #B51A00;
-	font-size: 22px;
+#colmail,#colnum,#mail {
+    left: 60px;
+    color: #b51a00
 }
-	
-#mail {
-	position: absolute;
-	left: -212px;
-	top: 140px;
-	right: 0;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	color: white;
-	font-size: 22px;
+
+#colmail,#mail {
+    left: -212px;
+    top: 140px;
+    color: #fff
 }
 
 #colmail {
-	position: absolute;
-	left: 60px;
-	top: 140px;
-	right: 0;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	color: #B51A00;
-	font-size: 22px;
+    left: 60px;
+    color: #b51a00
 }
 
-@media all and (max-width: 1024px) {
-	body {
-		height: 4000px;
-		width: 100%;
-		right: 0;
-		left: 0;
-		overflow: visible;
-		background-color: black;
-	}
-	
-	#spoon {
-		position: absolute;
-		display: none;
-	}
-	
-	#wood {
-		position: absolute;
-		display: none;
-	}
-	
-	#green {
-		position: absolute;
-		display: none;
-	}
-	
-	#guisosdoe {
-		position: absolute;
-		display: none;
-	}	
-	
-	#rice {
-		position: absolute;
-		display: none;
-	}	
-	
-	.top {
-		position: absolute;
-		top: 50px;
-		height: 90px;
-		left: 0;
-		right: 0;
-		width: 100%;
-		background-color: black;
-		opacity: 1;
-		z-index: 700;
-		overflow: hidde;
-	}
-	
-	#need {
-		position: absolute;
-		top: -15px;
-		left: 0;
-		right: 0;
-		text-align: center;
-		color: white;
-		font-family: 'Handlee', sans-serif;
-		font-size: 26px;
-	}
-	
-	#tacos {
-		-webkit-appearance: none;
-		text-decoration: none;
-		color: white;
-		top: -10px;
-		font-size: 23px;
-		border-radius: 2px;
-		height: 30px;
-		width: 190px;
-		border-color: transparent;
-		background-color: #B51A00;
-		font-family: 'Handlee', sans-serif;
-		cursor: pointer;
-		outline: none;
-	}
-	
-	#siteimg {
-		position: absolute;
-		top: 50px;
-		left: 0;
-		right: 0;
-		height: 400px;
-		background-image: url("http://i.imgur.com/4Tufqja.jpg");
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	
-	#logoimg {
-		position: absolute;
-		top: 30%;
-		left: 0;
-		right: 0;
-		text-align: center;
-		height: auto;
-		width: 100%;
-		background-color: transparent;
-	}
-	
-	img {
-		position: relative;
-		height: 150px;
-		width: 300px;
-		border-radius: 10px;
-	}
-	
-	.menu {
-		position: absolute;
-		display: none;
-	}
-	
-	.menuwrap {
-		transform: translate3d(0px,0px,0px);
-		position: fixed;
-		display: inline;
-		top: 0;
-		left: 0;
-		right: 0;
-		width: 100%;
-		height: 50px;
-		z-index: 10001;
-	}
-	
-	#alm {
-		position: absolute;
-		height: 48px;
-		top: 0;
-		left: 0;
-		z-index: 10001;
-	}
-	
-	#alm2 {
-		height: 48px;
-		width: 140px;
-	}
-	
-		 /*Makes Mobile Version of Menu visible*/
-	.littleme {
-		display: initial;
-		text-align: center;
-	    	left: 0;
-	    	right: 0;
-	    	z-index: 10000;
-	    	height: 50px;
-	    	overflow: visible;
-	    	background-color: black;
-	    	opacity: 1;
-	  }
-	
-	.littleme { margin: 0; }
-	
-	.toggle + a,
-	 .othermenu { 
-	     	display: none;
-	     	left: 0;
-	     	right: 0;
-	     	text-align: center;
-	 }
-	
-	/*Used a Character Font to make the Menu Icon. 
-	It was the most effecient way to get to what I needed.
-	This styles the Menu Icon*/
-	.toggle {
-	    	display: block;
-	    	text-align: right;
-	    	background-color: black;
-	    	opacity: 1;
-	    	top: 3px;
-	    	position: absolute;
-	    	right: 0;
-	    	left: 0;
-	    	color: #B51A00;
-	    	font-size: 48px;
-	    	font-weight: 100;
-	    	line-height: 45px;
-	    	text-decoration: none;
-	    	font-family: 'Material Icons', sans-serif;
-	    	z-index: 7000;
-	}
-	
-	/*Makes Menu Icon Site green after getting clicked*/
-	#drop:checked + label {
-	    	color: #B51A00;
-	}
-	
-	/*Displays Dropdown Menu after Menu Icon is clicked*/
-	[id^=drop]:checked + label + ul {
-	    	display: block;
-	}
-	
-	.littleme ul li {
-		display: block;
-		text-align: center;
-		left: -7.5%;
-		right: 7.5%;
-	    	width: 100%;
-	    	z-index: 6000;
-	    	border: none;
-	    	font-family: 'Handlee', sans-serif;
-	}
-	
-	.littleme ul {
-		padding: 0;
-		left: -7.5%;
-		right: 7.5%;
-	 	list-style: none;
-		position: relative;
-		text-align: center;
-	}
-	
-	.info {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 550px;
-		height: 3150px;
-		width: 100%;
-		z-index: 1001;
-		background-color: transparent;
-		transition: ease-out .4s all;
-		overflow: hidden;
-	}
-	
-	#container {
-		position: absolute;
-		top: 450px;
-		left: 0;
-		right: 0;
-		width: 100%;
-		height: 3150px;
-		background-image: url("http://i.imgur.com/FZDtDqG.jpg");
-		background-position: center;
-		background-repeat: repeat;
-		opacity: .6;
-		overflow: hidden;
-	}
-		
-	
-	#formhead {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 10px;
-		text-align: center;
-		font-size: 42px;
-		font-family: 'Handlee', sans-serif;
-		color: white;
-		z-index: 5000;
-	}
-	
-	#taquiza {
-		position: absolute;
-		top: 130px;
-		left: 0;
-		height: 1000px;
-		right: 0;
-		transition: .5s ease-out;
-	}
-	
-	#taquizatext {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 42px;
-		color: #B51A00;
-	}
-	
-	.include {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 55px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 29px;
-		color: white;
-	}
-	
-	#tacova {
-		position: absolute;
-		left: -15px;
-		right: 0;
-		top: 150px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#difftacova {
-		position: absolute;
-		left: -340px;
-		right: 0;
-		top: 153px;
-		text-align: center;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 23px;
-		color: white;
-	}
-	
-	#meat {
-		position: absolute;
-		left: -65px;
-		right: 0;
-		top: 180px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#diffmeat {
-		position: absolute;
-		left: -340px;
-		right: 0;
-		top: 183px;
-		text-align: center;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 23px;
-		color: white;
-	}
-	
-	#salsa {
-		position: absolute;
-		left: 10px;
-		right: 0;
-		top: 210px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#diffsalsa {
-		position: absolute;
-		left: -340px;
-		right: 0;
-		top: 213px;
-		text-align: center;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 23px;
-		color: white;
-	}
-	
-	#sides {
-		position: absolute;
-		left: -100px;
-		right: 0;
-		top: 240px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#diffsides {
-		position: absolute;
-		left: -340px;
-		right: 0;
-		top: 243px;
-		text-align: center;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 23px;
-		color: white;
-	}
-	
-	#agua {
-		position: absolute;
-		left: -135px;
-		right: 0;
-		top: 270px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#diffagua {
-		position: absolute;
-		left: -340px;
-		right: 0;
-		top: 273px;
-		text-align: center;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 23px;
-		color: white;
-	}
-	
-	#cups {
-		position: absolute;
-		left: 0px;
-		right: 0;
-		top: 300px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#diffcups {
-		position: absolute;
-		left: -340px;
-		right: 0;
-		top: 303px;
-		text-align: center;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 23px;
-		color: white;
-	}
-	
-	#typesof {
-		position: absolute;
-		left: 0;
-		right: 50%;
-		top: 385px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 24px;
-		color: white;
-		text-decoration: underline;
-		z-index: 3000;
-	}
-	
-	/*Split Here 	background-image: url("http://www.tioluchin.com/img/bg-guisado.jpg");
-		background-position: center;
-		background-repeat: repeat;*/
-	#asada {
-		position: absolute;
-		left: 0;
-		right: 50%;
-		top: 440px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#tripas {
-		position: absolute;
-		left: 0;
-		right: 50%;
-		top: 470px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#chick {
-		position: absolute;
-		left: 0;
-		right: 50%;
-		top: 500px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#ado {
-		position: absolute;
-		left: 0;
-		right: 50%;
-		top: 530px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#rizo{
-		position: absolute;
-		left: 0;
-		right: 50%;
-		top: 560px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#soy {
-		position: absolute;
-		left: 0;
-		right: 50%;
-		top: 590px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#nita {
-		position: absolute;
-		left: 0;
-		right: 50%;
-		top: 620px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#beza {
-		position: absolute;
-		left: 0;
-		right: 50%;
-		top: 650px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#gua {
-		position: absolute;
-		left: 0;
-		right: 50%;
-		top: 680px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	
-	
-	
-	/*Yuuuupp Split Here*/
-	
-	#waterof {
-		position: absolute;
-		left: 50%;
-		right: 0;
-		top: 385px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 24px;
-		color: white;
-		text-decoration: underline;
-		z-index: 3000;
-	}
-	
-	#hor {
-		position: absolute;
-		left: 50%;
-		right: 0;
-		top: 440px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#ceb {
-		position: absolute;
-		left: 50%;
-		right: 0;
-		top: 470px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#jam {
-		position: absolute;
-		left: 50%;
-		right: 0;
-		top: 500px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#lim {
-		position: absolute;
-		left: 50%;
-		right: 0;
-		top: 530px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#melon {
-		position: absolute;
-		left: 50%;
-		right: 0;
-		top: 560px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#pina {
-		position: absolute;
-		left: 50%;
-		right: 0;
-		top: 590px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#san {
-		position: absolute;
-		left: 50%;
-		right: 0;
-		top: 620px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#tama {
-		position: absolute;
-		left: 50%;
-		right: 0;
-		top: 650px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#fres {
-		position: absolute;
-		left: 50%;
-		right: 0;
-		top: 680px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	/*Another Split*/
-	
-	#peopler {
-		position: absolute;
-		left: -60px;
-		top: 825px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-		text-decoration: underline;
-	}
-	
-	#costr {
-		position: absolute;
-		left: -60px;
-		top: 865px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#seventyr {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 825px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-		text-decoration: underline;
-	}
-	
-	#seventycostr {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 865px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#hunedr {
-		position: absolute;
-		right: -60px;
-		top: 825px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-		text-decoration: underline;
-	}
-	
-	#hunedcostr {
-		position: absolute;
-		right: -60px;
-		top: 865px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	
-	
-	#guisos {
-		position: absolute;
-		top: 1130px;
-		left: 0;
-		height: 600px;
-		right: 0;
-	}
-	
-	#guisostext {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 42px;
-		color: #B51A00;
-	}
-	
-	#bistec {
-		position: absolute;
-		left: 35px
-		right: 0px;
-		top: 140px;
-		line-height: 30px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#diffbistec {
-		position: absolute;
-		left: -330px;
-		right: 0;
-		top: 143px;
-		text-align: center;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 23px;
-		color: white;
-	}
-	
-	#cochi {
-		position: absolute;
-		left: 25px;
-		right: 0;
-		top: 200px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-		line-height: 30px;
-	}
-	
-	#diffcochi {
-		position: absolute;
-		left: -330px;
-		right: 0;
-		top: 203px;
-		text-align: center;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 23px;
-		color: white;
-	}
-	
-	#rajas {
-		position: absolute;
-		left: 15px;
-		right: 15px;
-		top: 260px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-		line-height: 30px;
-	}
-	
-	#diffrajas {
-		position: absolute;
-		left: -330px;
-		right: 0;
-		top: 263px;
-		text-align: center;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 23px;
-		color: white;
-	}
-	
-	#chich {
-		position: absolute;
-		left: 15px;
-		right: 15px;
-		top: 320px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-		line-height: 30px;
-	}
-	
-	#diffchich {
-		position: absolute;
-		left: -330px;
-		right: 0;
-		top: 323px;
-		text-align: center;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 23px;
-		color: white;
-	}
-	
-	#mar {
-		position: absolute;
-		left: 25px;
-		right: 0;
-		line-height: 30px;
-		top: 380px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#diffmar {
-		position: absolute;
-		left: -330px;
-		right: 0;
-		top: 383px;
-		text-align: center;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 23px;
-		color: white;
-	}
-	
-	#frijol {
-		position: absolute;
-		left: 10px;
-		right: 0;
-		top: 440px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-		line-height: 30px;
-	}
-	
-	#diffrijol {
-		position: absolute;
-		left: -330px;
-		right: 0;
-		top: 443px;
-		text-align: center;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 23px;
-		color: white;
-	}
-	
-	#pollo {
-		position: absolute;
-		left: 25px;
-		right: 0;
-		top: 500px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-		line-height: 30px;
-	}
-	
-	#diffpollo {
-		position: absolute;
-		left: -330px;
-		right: 0;
-		top: 500px;
-		text-align: center;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 23px;
-		color: white;
-	}
-	
-	#tinga {
-		position: absolute;
-		left: 25px;
-		right: 0;
-		top: 560px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-		line-height: 30px;
-	}
-	
-	#difftinga {
-		position: absolute;
-		left: -330px;
-		right: 0;
-		top: 560px;
-		text-align: center;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 23px;
-		color: white;
-	}
-	
-	#cama {
-		position: absolute;
-		left: 5px;
-		right: 0;
-		top: 620px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-		line-height: 30px;
-	}
-	
-	#diffcama {
-		position: absolute;
-		left: -330px;
-		right: 0;
-		top: 623px;
-		text-align: center;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 23px;
-		color: white;
-	}
-	
-	#puer {
-		position: absolute;
-		left: 25px;
-		right: 0;
-		top: 680px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-		line-height: 30px;
-	}
-	
-	#diffpuer {
-		position: absolute;
-		left: -330px;
-		right: 0;
-		top: 683px;
-		text-align: center;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 23px;
-		color: white;
-	}
-	
-	#mach {
-		position: absolute;
-		left: 10px;
-		right: 0;
-		text-align: center;
-		top: 740px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-		line-height: 30px;
-	}
-	
-	#diffmach {
-		position: absolute;
-		left: -330px;
-		right: 0;
-		top: 743px;
-		text-align: center;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 23px;
-		color: white;
-	}
-	
-	#people {
-		position: absolute;
-		left: -60px;
-		top: 945px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-		text-decoration: underline;
-	}
-	
-	#cost {
-		position: absolute;
-		left: -60px;
-		top: 985px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#seventy {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 945px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-		text-decoration: underline;
-	}
-	
-	#seventycost {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 985px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#huned {
-		position: absolute;
-		right: -60px;
-		top: 945px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-		text-decoration: underline;
-	}
-	
-	#hunedcost {
-		position: absolute;
-		right: -60px;
-		top: 985px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 25px;
-		color: white;
-		z-index: 3000;
-	}
-	
-	#extras {
-		position: absolute;
-		top: 2290px;
-		left: 0;
-		height: 400px;
-		right: 0;
-	}
-	
-	#extrastext {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 42px;
-		color: #B51A00;
-	}
-	
-	#guac {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 150px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-	}
-	
-	#creme {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 210px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-	}
-	
-	#choco {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 270px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-	}
-	
-	#arro {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 330px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 20px;
-		color: white;
-	}
-	
-	#tacostwo {
-		-webkit-appearance: none;
-		position: absolute;
-		left: 0;
-		right: 0;
-		text-decoration: none;
-		color: white;
-		top: 440px;
-		font-size: 17px;
-		border-radius: 8px;
-		height: 50px;
-		width: 170px;
-		border-color: transparent;
-		background-color: #B51A00;
-		font-family: 'Handlee', sans-serif;
-		cursor: pointer;
-		outline: none;
-		text-align: center;
-		margin: auto;
-	}
-	
-	#bottom {
-		position: absolute;
-		top: 3430px;
-		left: 0;
-		right: 0;
-		height: 510px;
-		z-index: 8000;
-		background-color: black;
-		overflow: hidden;
-	}
-	
-	.menutwo {
-		position: absolute;
-		display: none;
-	}
-	
-	#endstuf {
-		position: absolute;
-		font-family: 'Handlee', sans-serif;
-		font-size: 14px;
-		color: white;
-		top: 94%;
-		left: 0;
-		right: 0;
-		text-align: center;
-		z-index: 8000;
-		background-color: black;
-	}
-	
-	a[href^=tel] { 
-		color: inherit; text-decoration: none; 
-	}
-	
-	#imgbotl {
-		position: absolute;
-		left: 3%;
-		text-align: center;
-		margin: auto;
-		right: 0;
-		top: 230px;
-		height: 150px;
-		width: 300px;
-		background-image: url("http://i.imgur.com/cBAFUZv.png");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: 100%;
-		z-index: 8000;
-	}
-	
-	#imgleft {
-		position: absolute;
-		display: none;
-	}
-	
-	
-	#con {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		color: white;
-		font-size: 29px;
-	}
-	
-	#numba {
-		position: absolute;
-		left: -140px;
-		top: 70px;
-		right: 0;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		color: white;
-		font-size: 22px;
-	}
-	
-	#colnum {
-		position: absolute;
-		left: 60px;
-		top: 70px;
-		right: 0;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		color: #B51A00;
-		font-size: 22px;
-	}
-		
-	#mail {
-		position: absolute;
-		left: -212px;
-		top: 110px;
-		right: 0;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		color: white;
-		font-size: 22px;
-	}
-	
-	#colmail {
-		position: absolute;
-		left: 60px;
-		top: 110px;
-		right: 0;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		color: #B51A00;
-		font-size: 22px;
-	}
-	
-}
+@media all and (max-width:1024px) {
+    body {
+        height: 4000px;
+        width: 100%;
+        right: 0;
+        left: 0;
+        overflow: visible;
+        background-color: #000
+    }
 
+    #green,#guisosdoe,#rice,#spoon,#wood {
+        position: absolute;
+        display: none
+    }
+
+    #need,.top {
+        position: absolute;
+        left: 0;
+        right: 0
+    }
+
+    .top {
+        height: 90px;
+        width: 100%;
+        background-color: #000;
+        opacity: 1;
+        z-index: 700;
+        overflow: hidde;
+        top: 50px
+    }
+
+    #need,#tacos {
+        color: #fff;
+        font-family: 'Handlee',sans-serif
+    }
+
+    #need {
+        text-align: center;
+        top: -15px;
+        font-size: 26px
+    }
+
+    #tacos {
+        -webkit-appearance: none;
+        text-decoration: none;
+        top: -10px;
+        font-size: 23px;
+        border-radius: 2px;
+        height: 30px;
+        width: 190px;
+        border-color: transparent;
+        background-color: #b51a00;
+        cursor: pointer;
+        outline: none
+    }
+
+    #siteimg {
+        top: 50px;
+        left: 0;
+        right: 0;
+        height: 400px;
+        background-image: url(http://i.imgur.com/4Tufqja.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+
+    #logoimg,#siteimg,.menu {
+        position: absolute
+    }
+
+    #logoimg {
+        top: 30%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        height: auto;
+        width: 100%;
+        background-color: transparent
+    }
+
+    img {
+        position: relative;
+        height: 150px;
+        width: 300px;
+        border-radius: 10px
+    }
+
+    .menu {
+        display: none
+    }
+
+    .littleme,.menuwrap {
+        left: 0;
+        right: 0;
+        height: 50px
+    }
+
+    #alm,.menuwrap {
+        top: 0;
+        z-index: 10001
+    }
+
+    .menuwrap {
+        transform: translate3d(0,0,0);
+        width: 100%;
+        display: inline;
+        position: fixed
+    }
+
+    #alm {
+        position: absolute;
+        height: 48px;
+        left: 0
+    }
+
+    #alm2 {
+        height: 48px;
+        width: 140px
+    }
+
+    .littleme {
+        display: initial;
+        text-align: center;
+        z-index: 10000;
+        overflow: visible;
+        background-color: #000;
+        opacity: 1;
+        margin: 0
+    }
+
+    .othermenu,.toggle,.toggle+a {
+        display: none;
+        left: 0;
+        right: 0;
+        text-align: center
+    }
+
+    .toggle {
+        display: block;
+        text-align: right;
+        background-color: #000;
+        opacity: 1;
+        top: 3px;
+        position: absolute;
+        color: #b51a00;
+        font-size: 48px;
+        font-weight: 100;
+        line-height: 45px;
+        text-decoration: none;
+        font-family: 'Material Icons',sans-serif;
+        z-index: 7000
+    }
+
+    #drop:checked+label {
+        color: #b51a00
+    }
+
+    [id^=drop]:checked+label+ul {
+        display: block
+    }
+
+    .littleme ul,.littleme ul li {
+        left: -7.5%;
+        right: 7.5%;
+        text-align: center
+    }
+
+    .littleme ul li {
+        display: block;
+        width: 100%;
+        z-index: 6000;
+        border: none;
+        font-family: 'Handlee',sans-serif
+    }
+
+    .littleme ul {
+        padding: 0;
+        list-style: none;
+        position: relative
+    }
+
+    #container,.info {
+        width: 100%;
+        height: 3150px;
+        overflow: hidden
+    }
+
+    .info {
+        z-index: 1001;
+        background-color: transparent;
+        transition: ease-out .4s all;
+        top: 550px
+    }
+
+    #container {
+        top: 450px;
+        background-image: url(http://i.imgur.com/FZDtDqG.jpg);
+        background-position: center;
+        background-repeat: repeat;
+        opacity: .6
+    }
+
+    #container,#formhead,#taquiza,.info {
+        position: absolute;
+        left: 0;
+        right: 0
+    }
+
+    #formhead {
+        text-align: center;
+        font-size: 42px;
+        font-family: 'Handlee',sans-serif;
+        color: #fff;
+        z-index: 5000;
+        top: 10px
+    }
+
+    #taquiza {
+        top: 130px;
+        height: 1000px;
+        transition: .5s ease-out
+    }
+
+    #tacova,#taquizatext,.include {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        text-align: center;
+        font-family: 'Handlee',sans-serif;
+        font-size: 42px;
+        color: #b51a00
+    }
+
+    #tacova,.include {
+        top: 55px;
+        font-size: 29px;
+        color: #fff
+    }
+
+    #tacova {
+        left: -15px;
+        top: 150px;
+        font-size: 25px;
+        z-index: 3000
+    }
+
+    #difftacova {
+        left: -340px;
+        top: 153px;
+        font-family: 'Material Icons',sans-serif;
+        font-size: 23px
+    }
+
+    #diffmeat,#difftacova,#meat,#salsa {
+        position: absolute;
+        right: 0;
+        text-align: center;
+        color: #fff
+    }
+
+    #meat {
+        z-index: 3000;
+        left: -65px;
+        top: 180px;
+        font-family: 'Handlee',sans-serif;
+        font-size: 25px
+    }
+
+    #diffmeat,#salsa {
+        left: -340px;
+        top: 183px;
+        font-family: 'Material Icons',sans-serif;
+        font-size: 23px
+    }
+
+    #salsa {
+        left: 10px;
+        top: 210px;
+        font-family: 'Handlee',sans-serif;
+        font-size: 25px;
+        z-index: 3000
+    }
+
+    #diffsalsa {
+        left: -340px;
+        top: 213px;
+        font-family: 'Material Icons',sans-serif;
+        font-size: 23px
+    }
+
+    #agua,#diffsalsa,#diffsides,#sides {
+        position: absolute;
+        right: 0;
+        text-align: center;
+        color: #fff
+    }
+
+    #sides {
+        z-index: 3000;
+        left: -100px;
+        top: 240px;
+        font-family: 'Handlee',sans-serif;
+        font-size: 25px
+    }
+
+    #agua,#diffsides {
+        left: -340px;
+        top: 243px;
+        font-family: 'Material Icons',sans-serif;
+        font-size: 23px
+    }
+
+    #agua {
+        left: -135px;
+        top: 270px;
+        font-family: 'Handlee',sans-serif;
+        font-size: 25px;
+        z-index: 3000
+    }
+
+    #diffagua {
+        left: -340px;
+        top: 273px;
+        font-family: 'Material Icons',sans-serif;
+        font-size: 23px
+    }
+
+    #cups,#diffagua,#diffcups {
+        position: absolute;
+        right: 0;
+        text-align: center;
+        color: #fff
+    }
+
+    #cups {
+        z-index: 3000;
+        left: 0;
+        top: 300px;
+        font-family: 'Handlee',sans-serif;
+        font-size: 25px
+    }
+
+    #diffcups {
+        left: -340px;
+        top: 303px;
+        font-family: 'Material Icons',sans-serif;
+        font-size: 23px
+    }
+
+    #ado,#asada,#beza,#chick,#gua,#nita,#rizo,#soy,#tripas,#typesof {
+        position: absolute;
+        left: 0;
+        right: 50%;
+        text-align: center;
+        font-family: 'Handlee',sans-serif;
+        color: #fff;
+        z-index: 3000
+    }
+
+    #typesof {
+        text-decoration: underline;
+        top: 385px;
+        font-size: 24px
+    }
+
+    #ado,#asada,#beza,#chick,#gua,#nita,#rizo,#soy,#tripas {
+        top: 440px;
+        font-size: 20px
+    }
+
+    #ado,#beza,#chick,#gua,#nita,#rizo,#soy,#tripas {
+        top: 470px
+    }
+
+    #ado,#beza,#chick,#gua,#nita,#rizo,#soy {
+        top: 500px
+    }
+
+    #ado,#beza,#gua,#nita,#rizo,#soy {
+        top: 530px
+    }
+
+    #beza,#gua,#nita,#rizo,#soy {
+        top: 560px
+    }
+
+    #beza,#gua,#nita,#soy {
+        top: 590px
+    }
+
+    #beza,#gua,#nita {
+        top: 620px
+    }
+
+    #beza,#gua {
+        top: 650px
+    }
+
+    #gua {
+        top: 680px
+    }
+
+    #waterof {
+        left: 50%;
+        right: 0;
+        top: 385px;
+        font-size: 24px;
+        text-decoration: underline
+    }
+
+    #ceb,#hor,#waterof {
+        position: absolute;
+        text-align: center;
+        font-family: 'Handlee',sans-serif;
+        color: #fff;
+        z-index: 3000
+    }
+
+    #hor {
+        left: 50%;
+        right: 0;
+        font-size: 20px;
+        top: 440px
+    }
+
+    #ceb {
+        top: 470px
+    }
+
+    #ceb,#jam,#lim {
+        left: 50%;
+        right: 0;
+        font-size: 20px
+    }
+
+    #jam {
+        position: absolute;
+        text-align: center;
+        font-family: 'Handlee',sans-serif;
+        color: #fff;
+        z-index: 3000;
+        top: 500px
+    }
+
+    #lim {
+        top: 530px
+    }
+
+    #lim,#melon,#pina {
+        position: absolute;
+        text-align: center;
+        font-family: 'Handlee',sans-serif;
+        color: #fff;
+        z-index: 3000
+    }
+
+    #melon {
+        left: 50%;
+        right: 0;
+        font-size: 20px;
+        top: 560px
+    }
+
+    #pina {
+        top: 590px
+    }
+
+    #pina,#san,#tama {
+        left: 50%;
+        right: 0;
+        font-size: 20px
+    }
+
+    #san {
+        position: absolute;
+        text-align: center;
+        font-family: 'Handlee',sans-serif;
+        color: #fff;
+        z-index: 3000;
+        top: 620px
+    }
+
+    #tama {
+        top: 650px
+    }
+
+    #costr,#fres,#peopler,#tama {
+        position: absolute;
+        text-align: center;
+        font-family: 'Handlee',sans-serif;
+        color: #fff;
+        z-index: 3000
+    }
+
+    #fres {
+        right: 0;
+        top: 680px;
+        left: 50%;
+        font-size: 20px
+    }
+
+    #costr,#peopler {
+        left: -60px;
+        font-size: 25px
+    }
+
+    #peopler {
+        text-decoration: underline;
+        top: 825px
+    }
+
+    #costr {
+        top: 865px
+    }
+
+    #seventyr {
+        left: 0;
+        right: 0;
+        top: 825px;
+        text-decoration: underline
+    }
+
+    #hunedcostr,#hunedr,#seventycostr,#seventyr {
+        position: absolute;
+        text-align: center;
+        font-family: 'Handlee',sans-serif;
+        font-size: 25px;
+        color: #fff;
+        z-index: 3000
+    }
+
+    #seventycostr {
+        left: 0;
+        top: 865px;
+        right: 0
+    }
+
+    #hunedcostr,#hunedr {
+        right: -60px
+    }
+
+    #hunedr {
+        text-decoration: underline;
+        top: 825px
+    }
+
+    #hunedcostr {
+        top: 865px
+    }
+
+    #bistec,#guisos,#guisostext {
+        position: absolute;
+        left: 0;
+        right: 0
+    }
+
+    #guisos {
+        height: 600px;
+        top: 1130px
+    }
+
+    #bistec,#guisostext {
+        top: 0;
+        text-align: center;
+        font-family: 'Handlee',sans-serif;
+        font-size: 42px;
+        color: #b51a00
+    }
+
+    #bistec {
+        left: 35px;
+        top: 140px;
+        line-height: 30px;
+        font-size: 25px;
+        color: #fff;
+        z-index: 3000
+    }
+
+    #diffbistec {
+        left: -330px;
+        top: 143px;
+        font-family: 'Material Icons',sans-serif;
+        font-size: 23px
+    }
+
+    #cochi,#diffbistec,#diffcochi,#rajas {
+        position: absolute;
+        right: 0;
+        text-align: center;
+        color: #fff
+    }
+
+    #cochi {
+        z-index: 3000;
+        line-height: 30px;
+        left: 25px;
+        top: 200px;
+        font-family: 'Handlee',sans-serif;
+        font-size: 25px
+    }
+
+    #diffcochi,#rajas {
+        left: -330px;
+        top: 203px;
+        font-family: 'Material Icons',sans-serif;
+        font-size: 23px
+    }
+
+    #rajas {
+        left: 15px;
+        right: 15px;
+        top: 260px;
+        font-family: 'Handlee',sans-serif;
+        font-size: 25px;
+        z-index: 3000;
+        line-height: 30px
+    }
+
+    #diffrajas {
+        left: -330px;
+        right: 0;
+        top: 263px;
+        font-family: 'Material Icons',sans-serif;
+        font-size: 23px
+    }
+
+    #chich,#diffchich,#diffrajas,#mar {
+        position: absolute;
+        text-align: center;
+        color: #fff
+    }
+
+    #chich {
+        z-index: 3000;
+        line-height: 30px;
+        left: 15px;
+        right: 15px;
+        top: 320px;
+        font-family: 'Handlee',sans-serif;
+        font-size: 25px
+    }
+
+    #diffchich,#mar {
+        left: -330px;
+        right: 0;
+        top: 323px;
+        font-family: 'Material Icons',sans-serif;
+        font-size: 23px
+    }
+
+    #mar {
+        left: 25px;
+        line-height: 30px;
+        top: 380px;
+        font-family: 'Handlee',sans-serif;
+        font-size: 25px;
+        z-index: 3000
+    }
+
+    #diffmar {
+        left: -330px;
+        top: 383px;
+        font-family: 'Material Icons',sans-serif;
+        font-size: 23px
+    }
+
+    #diffmar,#diffrijol,#frijol {
+        position: absolute;
+        right: 0;
+        text-align: center;
+        color: #fff
+    }
+
+    #frijol {
+        z-index: 3000;
+        line-height: 30px;
+        left: 10px;
+        top: 440px;
+        font-family: 'Handlee',sans-serif;
+        font-size: 25px
+    }
+
+    #diffrijol {
+        left: -330px;
+        top: 443px;
+        font-family: 'Material Icons',sans-serif;
+        font-size: 23px
+    }
+
+    #pollo {
+        left: 25px;
+        top: 500px;
+        font-family: 'Handlee',sans-serif;
+        font-size: 25px;
+        z-index: 3000;
+        line-height: 30px
+    }
+
+    #cama,#diffpollo,#difftinga,#pollo,#tinga {
+        position: absolute;
+        right: 0;
+        text-align: center;
+        color: #fff
+    }
+
+    #diffpollo {
+        left: -330px;
+        font-family: 'Material Icons',sans-serif;
+        font-size: 23px;
+        top: 500px
+    }
+
+    #cama,#difftinga,#tinga {
+        top: 560px
+    }
+
+    #tinga {
+        z-index: 3000;
+        line-height: 30px;
+        left: 25px;
+        font-family: 'Handlee',sans-serif;
+        font-size: 25px
+    }
+
+    #cama,#difftinga {
+        left: -330px;
+        font-family: 'Material Icons',sans-serif;
+        font-size: 23px
+    }
+
+    #cama {
+        left: 5px;
+        top: 620px;
+        font-family: 'Handlee',sans-serif;
+        font-size: 25px;
+        z-index: 3000;
+        line-height: 30px
+    }
+
+    #diffcama {
+        left: -330px;
+        top: 623px;
+        font-family: 'Material Icons',sans-serif;
+        font-size: 23px
+    }
+
+    #diffcama,#diffpuer,#puer {
+        position: absolute;
+        right: 0;
+        text-align: center;
+        color: #fff
+    }
+
+    #puer {
+        z-index: 3000;
+        line-height: 30px;
+        left: 25px;
+        top: 680px;
+        font-family: 'Handlee',sans-serif;
+        font-size: 25px
+    }
+
+    #diffpuer {
+        left: -330px;
+        top: 683px;
+        font-family: 'Material Icons',sans-serif;
+        font-size: 23px
+    }
+
+    #mach {
+        left: 10px;
+        right: 0;
+        top: 740px;
+        font-family: 'Handlee',sans-serif;
+        font-size: 25px;
+        z-index: 3000;
+        line-height: 30px
+    }
+
+    #cost,#diffmach,#mach,#people {
+        position: absolute;
+        text-align: center;
+        color: #fff
+    }
+
+    #diffmach {
+        right: 0;
+        top: 743px;
+        left: -330px;
+        font-family: 'Material Icons',sans-serif;
+        font-size: 23px
+    }
+
+    #cost,#people {
+        left: -60px;
+        font-family: 'Handlee',sans-serif;
+        font-size: 25px;
+        z-index: 3000
+    }
+
+    #people {
+        text-decoration: underline;
+        top: 945px
+    }
+
+    #cost {
+        top: 985px
+    }
+
+    #seventy {
+        left: 0;
+        right: 0;
+        top: 945px;
+        text-decoration: underline
+    }
+
+    #huned,#hunedcost,#seventy,#seventycost {
+        position: absolute;
+        text-align: center;
+        font-family: 'Handlee',sans-serif;
+        font-size: 25px;
+        color: #fff;
+        z-index: 3000
+    }
+
+    #seventycost {
+        left: 0;
+        top: 985px;
+        right: 0
+    }
+
+    #huned,#hunedcost {
+        right: -60px
+    }
+
+    #huned {
+        text-decoration: underline;
+        top: 945px
+    }
+
+    #hunedcost {
+        top: 985px
+    }
+
+    #extras {
+        position: absolute;
+        top: 2290px;
+        left: 0;
+        height: 400px;
+        right: 0
+    }
+
+    #arro,#choco,#creme,#extrastext,#guac,#tacostwo {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        text-align: center;
+        font-family: 'Handlee',sans-serif;
+        font-size: 42px;
+        color: #b51a00
+    }
+
+    #arro,#choco,#creme,#guac,#tacostwo {
+        top: 150px;
+        font-size: 20px;
+        color: #fff
+    }
+
+    #arro,#choco,#creme,#tacostwo {
+        top: 210px
+    }
+
+    #arro,#choco,#tacostwo {
+        top: 270px
+    }
+
+    #arro,#tacostwo {
+        top: 330px
+    }
+
+    #tacostwo {
+        -webkit-appearance: none;
+        text-decoration: none;
+        top: 440px;
+        font-size: 17px;
+        border-radius: 8px;
+        height: 50px;
+        width: 170px;
+        border-color: transparent;
+        background-color: #b51a00;
+        cursor: pointer;
+        outline: none;
+        margin: auto
+    }
+
+    #bottom,#endstuf,#imgbotl {
+        position: absolute;
+        right: 0;
+        z-index: 8000
+    }
+
+    #bottom {
+        top: 3430px;
+        left: 0;
+        height: 510px;
+        background-color: #000;
+        overflow: hidden
+    }
+
+    .menutwo {
+        position: absolute;
+        display: none
+    }
+
+    #endstuf,#imgbotl {
+        text-align: center
+    }
+
+    #endstuf {
+        font-family: 'Handlee',sans-serif;
+        font-size: 14px;
+        color: #fff;
+        background-color: #000;
+        top: 94%;
+        left: 0
+    }
+
+    a[href^=tel] {
+        color: inherit;
+        text-decoration: none
+    }
+
+    #imgbotl {
+        left: 3%;
+        margin: auto;
+        top: 230px;
+        height: 150px;
+        width: 300px;
+        background-image: url(http://i.imgur.com/cBAFUZv.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%
+    }
+
+    #imgleft {
+        position: absolute;
+        display: none
+    }
+
+    #colmail,#colnum,#con,#mail,#numba {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-family: 'Handlee',sans-serif;
+        color: #fff;
+        font-size: 29px
+    }
+
+    #colmail,#colnum,#mail,#numba {
+        left: -140px;
+        top: 70px;
+        font-size: 22px
+    }
+
+    #colmail,#colnum,#mail {
+        left: 60px;
+        color: #b51a00
+    }
+
+    #colmail,#mail {
+        left: -212px;
+        top: 110px;
+        color: #fff
+    }
+
+    #colmail {
+        left: 60px;
+        color: #b51a00
+    }
+}
