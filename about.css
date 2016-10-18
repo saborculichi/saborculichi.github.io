@@ -1,1388 +1,1258 @@
+.top,body {
+    width: 100%;
+    background-color: #000;
+    top: 0
+}
+
 body {
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	height: auto;
-	width: 100%;
-	overflow: visible;
-	background-color: black;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: visible;
+    height: auto
+}
+
+#need,.top {
+    position: absolute;
+    left: 0;
+    right: 0
 }
 
 .top {
-	position: absolute;
-	top: 0;
-	height: 50px;
-	left: 0;
-	right: 0;
-	width: 100%;
-	background-color: black;
+    height: 50px
+}
+
+#need,#tacos {
+    color: #fff;
+    font-family: 'Handlee',sans-serif
 }
 
 #need {
-	position: absolute;
-	top: -7px;
-	left: 0;
-	right: 0;
-	text-align: center;
-	color: white;
-	font-family: 'Handlee', sans-serif;
-	font-size: 19px;
+    text-align: center;
+    top: -7px;
+    font-size: 19px
 }
 
 #tacos {
-	-webkit-appearance: none;
-	text-decoration: none;
-	color: white;
-	top: -10px;
-	font-size: 17px;
-	border-radius: 2px;
-	height: 30px;
-	width: 130px;
-	border-color: transparent;
-	background-color: #B51A00;
-	font-family: 'Handlee', sans-serif;
-	cursor: pointer;
-	outline: none;
+    -webkit-appearance: none;
+    text-decoration: none;
+    top: -10px;
+    font-size: 17px;
+    border-radius: 2px;
+    height: 30px;
+    width: 130px;
+    border-color: transparent;
+    background-color: #b51a00;
+    cursor: pointer;
+    outline: none
 }
 
 #siteimg {
-	position: absolute;
-	top: 50px;
-	left: 0;
-	right: 0;
-	height: 400px;
-	background-image: url("http://i.imgur.com/M9WnfSa.jpg");
-	background-position: center;
-	background-size: 100%;
-	background-repeat: no-repeat;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    height: 400px;
+    background-image: url(http://i.imgur.com/M9WnfSa.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat
 }
 
 #logoimg {
-	position: absolute;
-	top: 30%;
-	left: 0;
-	right: 0;
-	text-align: center;
-	height: auto;
-	width: 100%;
-	background-color: transparent;
+    top: 30%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    background-color: transparent
 }
 
 img {
-	position: relative;
-	height: 150px;
-	width: 300px;
-	border-radius: 10px;
+    position: relative;
+    height: 150px;
+    width: 300px;
+    border-radius: 10px
 }
 
-.menuwrap {
-	position: absolute;
-	display: none;
+#logoimg,.menuwrap {
+    position: absolute
 }
 
-.littleme p { text-align: right; }
- .toggle, [id^=drop] {
- display: none;
+.littleme p {
+    text-align: right
 }
 
-/*Dropdown Menu for mobile site. Hidden on desktop*/
+.littleme,.menuwrap,.toggle,[id^=drop] {
+    display: none
+}
+
 .littleme {
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  text-align: right;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  display: none;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    position: absolute
 }
 
 .littleme:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both
 }
 
 .littleme ul {
-  padding: 0;
-  left: -6%;
-  right: 6%;
-  list-style: none;
-  position: relative;
-  text-align: center;
+    padding: 0;
+    left: -6%;
+    right: 6%;
+    list-style: none;
+    position: relative;
+    text-align: center
+}
+
+.littleme a,.littleme ul li {
+    text-align: center;
+    opacity: 1;
+    display: block;
+    background-color: #b51a00
 }
 
 .littleme ul li {
-  left: -6%;
-  right: 6%;
-  text-align: center;
-  height: auto;
-  width: 100%;
-  display: block;
-  background-color: #B51A00;
-  opacity: 1;
+    height: auto;
+    width: 100%;
+    left: -6%;
+    right: 6%
 }
 
 .littleme a {
-  text-align: center;
-  opacity: 1;
-  left: 0;
-  right: 0;
-  display: block;
-  background-color: #B51A00;
-  color: #FFF;
-  font-size: 20px;
-  font-family: ;
-  line-height: 45px;
-  text-decoration: none;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 45px;
+    text-decoration: none
 }
 
-.littleme li > a:after { content: ' +';}
+.littleme li>a:after {
+    content: ' +'
+}
 
-.littleme li > a:only-child:after { content: ''; }
+.littleme li>a:only-child:after {
+    content: ''
+}
 
 .menu {
-	position: absolute;
-	text-align: center;
-	top: 450px;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 95px;
-	z-index: 10000;
-	background-color: black;
+    position: absolute;
+    text-align: center;
+    top: 450px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 95px;
+    z-index: 10000;
+    background-color: #000
+}
+
+#menutext,.toma {
+    position: relative
 }
 
 .toma {
-	position: relative;
-	top: 5px;
-	height: 30px;
-	width: 30px;
-	background-color: black;
-	opacity: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #000;
+    opacity: 0;
+    top: 5px
 }
 
 #menutext {
-	position: relative;
-	left: -40px;
-	right: 0;
-	top: -5px;
-	bottom: 0;
-	list-style: none;
-	font-family: 'Handlee', sans-serif;
-	font-size: 15px;
-	color: white;
-	text-align: center;
+    left: -40px;
+    right: 0;
+    top: -5px;
+    bottom: 0;
+    list-style: none;
+    font-family: 'Handlee',sans-serif;
+    font-size: 15px;
+    color: #fff;
+    text-align: center
+}
+
+.fixed,.info {
+    left: 0;
+    width: 100%
 }
 
 .fixed {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: 95px;
-	width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 95px
 }
 
-
 li {
-	display: inline;
-	padding: 0px 30px;
+    display: inline;
+    padding: 0 30px
 }
 
 a {
-	text-decoration: none;
-	outline: none;
-	color: white;
+    text-decoration: none;
+    outline: none;
+    color: #fff
 }
 
 a:hover .toma {
-	opacity: 1;
-	transition: .7s;
+    opacity: 1;
+    transition: .7s
 }
 
 .info {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 590px;
-	height: 750px;
-	width: 100%;
-	z-index: 1001;
-	background-color: black;
+    top: 590px;
+    height: 750px;
+    z-index: 1001;
+    background-color: #000
+}
+
+#formhead,#taquiza,.info {
+    position: absolute;
+    right: 0
 }
 
 #formhead {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 10px;
-	text-align: center;
-	font-size: 36px;
-	font-family: 'Handlee', sans-serif;
-	color: white;
-	z-index: 5000;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Handlee',sans-serif;
+    color: #fff;
+    z-index: 5000;
+    left: 0;
+    top: 10px
 }
 
 #taquiza {
-	position: absolute;
-	top: 150px;
-	right: 0;
-	height: 500px;
-	left: 50%;
-
+    top: 150px;
+    height: 500px;
+    left: 50%
 }
 
-#otherside {
-	position: absolute;
-	top: 90px;
-	left: 0;
-	height: 700px;
-	right: 50%;
+#jppic,#otherside {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    height: 700px;
+    right: 50%
 }
 
 #jppic {
-	position: absolute;
-	left: 30px;
-	top: 100px;
-	right: 30px;
-	width: 80%;
-	height: 400px;
-	background-image: url("http://i.imgur.com/yyCprzF.jpg");
-	background-position: center;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	border-radius: 60px;
+    left: 30px;
+    top: 100px;
+    right: 30px;
+    width: 80%;
+    height: 400px;
+    background-image: url(http://i.imgur.com/yyCprzF.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 60px
 }
 
 #tacostwo {
-	-webkit-appearance: none;
-	position: absolute;
-	left: 17%;
-	right: 0;
-	height: 35px;
-	width: 170px;
-	text-align: center;
-	text-decoration: none;
-	color: white;
-	top: 640px;
-	font-size: 22px;
-	border-radius: 5px;
-	border-color: transparent;
-	background-color: #B51A00;
-	font-family: 'Handlee', sans-serif;
-	cursor: pointer;
-	outline: none;
+    -webkit-appearance: none;
+    position: absolute;
+    left: 17%;
+    right: 0;
+    height: 35px;
+    width: 170px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    top: 640px;
+    font-size: 22px;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: #b51a00;
+    font-family: 'Handlee',sans-serif;
+    cursor: pointer;
+    outline: none
+}
+
+#diffin2,#taquizatext {
+    position: absolute;
+    left: 0;
+    right: 0
 }
 
 #taquizatext {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0px;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	font-size: 32px;
-	color: #B51A00;
+    text-align: center;
+    font-size: 32px;
+    color: #b51a00;
+    top: 0;
+    font-family: 'Handlee',sans-serif
 }
 
 #diffin2 {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 75px;
-	text-align: left;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    top: 75px;
+    font-family: 'Material Icons',sans-serif
+}
+
+#diffin2,#diffin3,#include {
+    text-align: left;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100
 }
 
 #include {
-	position: absolute;
-	left: 40px;
-	right: 0;
-	top: 70px;
-	text-align: left;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    position: absolute;
+    right: 0;
+    left: 40px;
+    top: 70px;
+    font-family: 'Open Sans Condensed',sans-serif
 }
 
 #diffin3 {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 105px;
-	text-align: left;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    left: 0;
+    top: 105px;
+    font-family: 'Material Icons',sans-serif
+}
+
+#diffin3,#diffin4,#include2 {
+    position: absolute;
+    right: 0
 }
 
 #include2 {
-	position: absolute;
-	left: 40px;
-	right: 0;
-	top: 100px;
-	text-align: left;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    text-align: left;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100;
+    left: 40px;
+    top: 100px;
+    font-family: 'Open Sans Condensed',sans-serif
 }
 
 #diffin4 {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 135px;
-	text-align: left;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    left: 0;
+    top: 135px;
+    font-family: 'Material Icons',sans-serif
+}
+
+#diffin4,#diffin5,#include3 {
+    text-align: left;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100
 }
 
 #include3 {
-	position: absolute;
-	left: 40px;
-	right: 0;
-	top: 130px;
-	text-align: left;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    position: absolute;
+    right: 0;
+    left: 40px;
+    top: 130px;
+    font-family: 'Open Sans Condensed',sans-serif
 }
 
 #diffin5 {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 165px;
-	text-align: left;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    left: 0;
+    top: 165px;
+    font-family: 'Material Icons',sans-serif
+}
+
+#diffin5,#diffin6,#include4 {
+    position: absolute;
+    right: 0
 }
 
 #include4 {
-	position: absolute;
-	left: 40px;
-	right: 0;
-	top: 160px;
-	text-align: left;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    text-align: left;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100;
+    left: 40px;
+    top: 160px;
+    font-family: 'Open Sans Condensed',sans-serif
 }
 
 #diffin6 {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 195px;
-	text-align: left;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    left: 0;
+    top: 195px;
+    font-family: 'Material Icons',sans-serif
+}
+
+#diffin6,#diffin7,#include5 {
+    text-align: left;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100
 }
 
 #include5 {
-	position: absolute;
-	left: 40px;
-	right: 0;
-	top: 190px;
-	text-align: left;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    position: absolute;
+    right: 0;
+    left: 40px;
+    top: 190px;
+    font-family: 'Open Sans Condensed',sans-serif
 }
 
 #diffin7 {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 225px;
-	text-align: left;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    left: 0;
+    top: 225px;
+    font-family: 'Material Icons',sans-serif
+}
+
+#diffin7,#diffin8,#include6 {
+    position: absolute;
+    right: 0
 }
 
 #include6 {
-	position: absolute;
-	left: 40px;
-	right: 0;
-	top: 220px;
-	text-align: left;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    text-align: left;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100;
+    left: 40px;
+    top: 220px;
+    font-family: 'Open Sans Condensed',sans-serif
 }
 
 #diffin8 {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 255px;
-	text-align: left;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    left: 0;
+    top: 255px;
+    font-family: 'Material Icons',sans-serif
+}
+
+#diffin8,#diffin9,#include7 {
+    text-align: left;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100
 }
 
 #include7 {
-	position: absolute;
-	left: 40px;
-	right: 0;
-	top: 250px;
-	text-align: left;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    position: absolute;
+    right: 0;
+    left: 40px;
+    top: 250px;
+    font-family: 'Open Sans Condensed',sans-serif
 }
 
-
 #diffin9 {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 285px;
-	text-align: left;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    left: 0;
+    top: 285px;
+    font-family: 'Material Icons',sans-serif
+}
+
+#diffin10,#diffin9,#include8 {
+    position: absolute;
+    right: 0
 }
 
 #include8 {
-	position: absolute;
-	left: 40px;
-	right: 0;
-	top: 280px;
-	text-align: left;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    text-align: left;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100;
+    left: 40px;
+    top: 280px;
+    font-family: 'Open Sans Condensed',sans-serif
 }
 
 #diffin10 {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 315px;
-	text-align: left;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    left: 0;
+    top: 315px;
+    font-family: 'Material Icons',sans-serif
+}
+
+#diffin10,#diffin11,#include9 {
+    text-align: left;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100
 }
 
 #include9 {
-	position: absolute;
-	left: 40px;
-	right: 0;
-	top: 310px;
-	text-align: left;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    position: absolute;
+    right: 0;
+    left: 40px;
+    top: 310px;
+    font-family: 'Open Sans Condensed',sans-serif
 }
 
 #diffin11 {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 345px;
-	text-align: left;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    left: 0;
+    top: 345px;
+    font-family: 'Material Icons',sans-serif
+}
+
+#diffin11,#diffin12,#include10 {
+    position: absolute;
+    right: 0
 }
 
 #include10 {
-	position: absolute;
-	left: 40px;
-	right: 0;
-	top: 340px;
-	text-align: left;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    text-align: left;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100;
+    left: 40px;
+    top: 340px;
+    font-family: 'Open Sans Condensed',sans-serif
 }
 
 #diffin12 {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 375px;
-	text-align: left;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    left: 0;
+    top: 375px;
+    font-family: 'Material Icons',sans-serif
+}
+
+#diffin12,#diffin13,#include11 {
+    text-align: left;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100
 }
 
 #include11 {
-	position: absolute;
-	left: 40px;
-	right: 0;
-	top: 370px;
-	text-align: left;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    position: absolute;
+    right: 0;
+    left: 40px;
+    top: 370px;
+    font-family: 'Open Sans Condensed',sans-serif
 }
 
-#diffin13{
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 405px;
-	text-align: left;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+#diffin13 {
+    left: 0;
+    top: 405px;
+    font-family: 'Material Icons',sans-serif
+}
+
+#botstuff,#diffin13,#include12 {
+    position: absolute;
+    right: 0
 }
 
 #include12 {
-	position: absolute;
-	left: 40px;
-	right: 0;
-	top: 400px;
-	text-align: left;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+    text-align: left;
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100;
+    left: 40px;
+    top: 400px
 }
 
 #botstuff {
-	position: absolute;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 300px;
-	top: 1500px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    top: 1500px
 }
 
-#con {
-	position: absolute;
-	top: 20px;
-	left: 0;
-	right: 0;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	color: white;
-	font-size: 26px;
+#colmail,#colnum,#con,#mail,#numba {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Handlee',sans-serif;
+    color: #fff;
+    font-size: 26px
 }
 
-#numba {
-	position: absolute;
-	left: -140px;
-	top: 90px;
-	right: 0;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	color: white;
-	font-size: 22px;
+#colmail,#colnum,#mail,#numba {
+    left: -140px;
+    top: 90px;
+    font-size: 22px
 }
 
-#colnum {
-	position: absolute;
-	left: 60px;
-	top: 90px;
-	right: 0;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	color: #B51A00;
-	font-size: 22px;
-
+#colmail,#colnum,#mail {
+    left: 60px;
+    color: #b51a00
 }
-	
-#mail {
-	position: absolute;
-	left: -212px;
-	top: 140px;
-	right: 0;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	color: white;
-	font-size: 22px;
+
+#colmail,#mail {
+    left: -212px;
+    top: 140px;
+    color: #fff
 }
 
 #colmail {
-	position: absolute;
-	left: 60px;
-	top: 140px;
-	right: 0;
-	text-align: center;
-	font-family: 'Handlee', sans-serif;
-	color: #B51A00;
-	font-size: 22px;
+    left: 60px;
+    color: #b51a00
 }
-	
-	
+
+#imgbotl,#imgleft {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 8000
+}
+
 #imgbotl {
-	position: absolute;
-	right: 0;
-	top: -30px;
-	height: 300px;
-	width: 400px;
-	background-image: url("http://i.imgur.com/cBAFUZv.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	z-index: 8000;
+    right: 0;
+    top: -30px;
+    height: 300px;
+    width: 400px;
+    background-image: url(http://i.imgur.com/cBAFUZv.png)
 }
 
 #imgleft {
-	position: absolute;
-	left: 45px;
-	top: 35px;
-	height: 150px;
-	width: 300px;
-	background-image: url("http://i.imgur.com/Gj3MwMA.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	border-radius: 70px;
-	z-index: 8000;
+    left: 45px;
+    top: 35px;
+    height: 150px;
+    width: 300px;
+    background-image: url(http://i.imgur.com/Gj3MwMA.jpg);
+    border-radius: 70px
+}
+
+#bottom,.menutwo {
+    position: absolute;
+    left: 0;
+    right: 0
 }
 
 #bottom {
-	position: absolute;
-	top: 1730px;
-	left: 0;
-	right: 0;
-	height: 100px;
-	z-index: 8000;
+    height: 100px;
+    z-index: 8000;
+    top: 1730px
 }
 
 .menutwo {
-	position: absolute;
-	top: 10%;
-	left: 0;
-	right: 0;
-	width: 100%;
-	bottom: 0;
+    top: 10%;
+    width: 100%;
+    bottom: 0
+}
+
+#endstuf,#menutexttwo {
+    position: absolute;
+    font-family: 'Handlee',sans-serif;
+    color: #fff;
+    right: 0;
+    text-align: center
 }
 
 #menutexttwo {
-	position: absolute;
-	left: -80px;
-	right: 0;
-	top: 20%;
-	bottom: 0;
-	list-style: none;
-	font-family: 'Handlee', sans-serif;
-	font-size: 15px;
-	color: white;
-	text-align: center;
-	vertical-align: middle;
+    bottom: 0;
+    list-style: none;
+    vertical-align: middle;
+    left: -80px;
+    top: 20%;
+    font-size: 15px
 }
 
 #endstuf {
-	position: absolute;
-	font-family: 'Handlee', sans-serif;
-	font-size: 14px;
-	color: white;
-	top: 110%;
-	left: 0;
-	right: 0;
-	text-align: center;
-	z-index: 8000;
+    font-size: 14px;
+    top: 110%;
+    left: 0;
+    z-index: 8000
 }
 
-@media all and (max-width: 1024px) {
-	body {
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		height: auto;
-		width: 100%;
-		overflow: visible;
-		background-color: black;
-	}
-	
-	.top {
-		position: absolute;
-		top: 50px;
-		height: 50px;
-		left: 0;
-		right: 0;
-		width: 100%;
-		background-color: black;
-	}
-	
-	#need {
-		position: absolute;
-		top: -15px;
-		left: 0;
-		right: 0;
-		text-align: center;
-		color: white;
-		font-family: 'Handlee', sans-serif;
-		font-size: 26px;
-	}
-	
-	#tacos {
-		-webkit-appearance: none;
-		text-decoration: none;
-		color: white;
-		top: -10px;
-		font-size: 23px;
-		border-radius: 2px;
-		height: 30px;
-		width: 190px;
-		border-color: transparent;
-		background-color: #B51A00;
-		font-family: 'Handlee', sans-serif;
-		cursor: pointer;
-		outline: none;
-	}
-	
-	#siteimg {
-		position: absolute;
-		top: 140px;
-		left: 0;
-		right: 0;
-		height: 310px;
-		background-image: url("http://i.imgur.com/M9WnfSa.jpg");
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	
-	#logoimg {
-		position: absolute;
-		top: 30%;
-		left: 0;
-		right: 0;
-		text-align: center;
-		height: auto;
-		width: 100%;
-		background-color: transparent;
-	}
-	
-	img {
-		position: relative;
-		height: 150px;
-		width: 300px;
-		border-radius: 10px;
-	}
-	
-	.menu {
-		position: absolute;
-		display: none;
-	}
-	
-	.menuwrap {
-		transform: translate3d(0px,0px,0px);
-		position: fixed;
-		display: inline;
-		top: 0;
-		left: 0;
-		right: 0;
-		width: 100%;
-		height: 50px;
-		z-index: 10001;
-	}
-	
-	#alm {
-		position: absolute;
-		height: 48px;
-		top: 0;
-		left: 0;
-		z-index: 10001;
-	}
-	
-	#alm2 {
-		height: 48px;
-		width: 140px;
-	}
-	
-		 /*Makes Mobile Version of Menu visible*/
-	.littleme {
-		display: initial;
-		text-align: center;
-	    	left: 0;
-	    	right: 0;
-	    	z-index: 10000;
-	    	height: 50px;
-	    	overflow: visible;
-	    	background-color: black;
-	    	opacity: 1;
-	  }
-	
-	.littleme { margin: 0; }
-	
-	.toggle + a,
-	 .othermenu { 
-	     	display: none;
-	     	left: 0;
-	     	right: 0;
-	     	text-align: center;
-	 }
-	
-	/*Used a Character Font to make the Menu Icon. 
-	It was the most effecient way to get to what I needed.
-	This styles the Menu Icon*/
-	.toggle {
-	    	display: block;
-	    	text-align: right;
-	    	background-color: black;
-	    	opacity: 1;
-	    	top: 3px;
-	    	position: absolute;
-	    	right: 0;
-	    	left: 0;
-	    	color: #B51A00;
-	    	font-size: 48px;
-	    	font-weight: 100;
-	    	line-height: 45px;
-	    	text-decoration: none;
-	    	font-family: 'Material Icons', sans-serif;
-	    	z-index: 7000;
-	}
-	
-	/*Makes Menu Icon Site green after getting clicked*/
-	#drop:checked + label {
-	    	color: #B51A00;
-	}
-	
-	/*Displays Dropdown Menu after Menu Icon is clicked*/
-	[id^=drop]:checked + label + ul {
-	    	display: block;
-	}
-	
-	.littleme ul li {
-		display: block;
-		text-align: center;
-		left: -7.5%;
-		right: 7.5%;
-	    	width: 100%;
-	    	z-index: 6000;
-	    	border: none;
-	    	font-family: 'Handlee', sans-serif;
-	}
-	
-	.littleme ul {
-		padding: 0;
-		left: -7.5%;
-		right: 7.5%;
-	 	list-style: none;
-		position: relative;
-		text-align: center;
-	}
-	
-	.info {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 590px;
-		height: 750px;
-		width: 100%;
-		z-index: 1001;
-		background-color: black;
-	}
-	
-	#formhead {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 10px;
-		text-align: center;
-		font-size: 36px;
-		font-family: 'Handlee', sans-serif;
-		color: white;
-		z-index: 5000;
-	}
-	
-	#taquiza {
-		position: absolute;
-		top: 150px;
-		right: 0;
-		height: 500px;
-		left: 0;
-	
-	}
-	
-	#otherside {
-		position: absolute;
-		top: 90px;
-		left: 0;
-		height: 700px;
-		right: 50%;
-	}
-	
-	#jppic {
-		position: absolute;
-		display: none;
-	}
-	
-	#tacostwo {
-		display: block;
-		margin: auto;
-	}
-	
-	#tacostwo {
-		-webkit-appearance: none;
-		position: absolute;
-		left: 0;
-		right: 0;
-		text-align: center;
-		text-decoration: none;
-		color: white;
-		height: 35px;
-		width: 180px;
-		top: 680px;
-		font-size: 22px;
-		border-radius: 5px;
-		border-color: transparent;
-		background-color: #B51A00;
-		font-family: 'Handlee', sans-serif;
-		cursor: pointer;
-		outline: none;
-	}
-	
-	#taquizatext {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0px;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		font-size: 32px;
-		color: #B51A00;
-	}
-	
-	#diffin2 {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 75px;
-		text-align: left;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#include {
-		position: absolute;
-		left: 40px;
-		right: 0;
-		top: 70px;
-		text-align: left;
-		font-family: 'Open Sans Condensed', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#diffin3 {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 105px;
-		text-align: left;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#include2 {
-		position: absolute;
-		left: 40px;
-		right: 0;
-		top: 100px;
-		text-align: left;
-		font-family: 'Open Sans Condensed', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#diffin4 {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 135px;
-		text-align: left;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#include3 {
-		position: absolute;
-		left: 40px;
-		right: 0;
-		top: 130px;
-		text-align: left;
-		font-family: 'Open Sans Condensed', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#diffin5 {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 165px;
-		text-align: left;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#include4 {
-		position: absolute;
-		left: 40px;
-		right: 0;
-		top: 160px;
-		text-align: left;
-		font-family: 'Open Sans Condensed', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#diffin6 {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 195px;
-		text-align: left;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#include5 {
-		position: absolute;
-		left: 40px;
-		right: 0;
-		top: 190px;
-		text-align: left;
-		font-family: 'Open Sans Condensed', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#diffin7 {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 225px;
-		text-align: left;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#include6 {
-		position: absolute;
-		left: 40px;
-		right: 0;
-		top: 220px;
-		text-align: left;
-		font-family: 'Open Sans Condensed', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#diffin8 {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 255px;
-		text-align: left;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#include7 {
-		position: absolute;
-		left: 40px;
-		right: 0;
-		top: 250px;
-		text-align: left;
-		font-family: 'Open Sans Condensed', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	
-	#diffin9 {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 285px;
-		text-align: left;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#include8 {
-		position: absolute;
-		left: 40px;
-		right: 0;
-		top: 280px;
-		text-align: left;
-		font-family: 'Open Sans Condensed', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#diffin10 {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 315px;
-		text-align: left;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#include9 {
-		position: absolute;
-		left: 40px;
-		right: 0;
-		top: 310px;
-		text-align: left;
-		font-family: 'Open Sans Condensed', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#diffin11 {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 345px;
-		text-align: left;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#include10 {
-		position: absolute;
-		left: 40px;
-		right: 0;
-		top: 340px;
-		text-align: left;
-		font-family: 'Open Sans Condensed', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#diffin12 {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 375px;
-		text-align: left;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#include11 {
-		position: absolute;
-		left: 40px;
-		right: 0;
-		top: 370px;
-		text-align: left;
-		font-family: 'Open Sans Condensed', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#diffin13{
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 405px;
-		text-align: left;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#include12 {
-		position: absolute;
-		left: 40px;
-		right: 0;
-		top: 400px;
-		text-align: left;
-		font-family: 'Open Sans Condensed', sans-serif;
-		font-size: 19px;
-		color: white;
-		font-weight: 100;
-	}
-	
-	#botstuff {
-		position: absolute;
-		left: 0;
-		right: 0;
-		width: 100%;
-		height: 300px;
-		top: 1500px;
-	}
-	
-	#con {
-		position: absolute;
-		top: -140px;
-		left: 0;
-		right: 0;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		color: white;
-		font-size: 29px;
-	}
-	
-	#numba {
-		position: absolute;
-		left: -140px;
-		top: -70px;
-		right: 0;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		color: white;
-		font-size: 22px;
-	}
-	
-	#colnum {
-		position: absolute;
-		left: 60px;
-		top: -70px;
-		right: 0;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		color: #B51A00;
-		font-size: 22px;
-	
-	}
-		
-	#mail {
-		position: absolute;
-		left: -212px;
-		top: -30px;
-		right: 0;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		color: white;
-		font-size: 22px;
-	}
-	
-	#colmail {
-		position: absolute;
-		left: 60px;
-		top: -30px;
-		right: 0;
-		text-align: center;
-		font-family: 'Handlee', sans-serif;
-		color: #B51A00;
-		font-size: 22px;
-	}
-		
-		
-	#imgbotl {
-		position: absolute;
-		right: 0;
-		left: 12%;
-		text-align: center;
-		top: 90px;
-		height: 150px;
-		width: 300px;
-		background-image: url("http://i.imgur.com/cBAFUZv.png");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: 100%;
-		z-index: 8000;
-	}
-	
-	#imgleft {
-		position: absolute;
-		display: none;
-	}
-	
-	#bottom {
-		position: absolute;
-		top: 1730px;
-		left: 0;
-		right: 0;
-		height: 100px;
-		z-index: 8000;
-	}
+@media all and (max-width:1024px) {
+    .top,body {
+        width: 100%;
+        background-color: #000
+    }
 
-	a[href^=tel] { 
-		color: inherit; text-decoration: none; 
-	}
-	
-	.menutwo {
-		position: absolute;
-		display: none;
-	}
-	
-	#endstuf {
-		position: absolute;
-		font-family: 'Handlee', sans-serif;
-		font-size: 14px;
-		color: white;
-		top: 110%;
-		left: 0;
-		right: 0;
-		text-align: center;
-		z-index: 8000;
-	}
+    body {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: visible;
+        top: 0;
+        height: auto
+    }
+
+    #need,.top {
+        position: absolute;
+        left: 0;
+        right: 0
+    }
+
+    .top {
+        height: 50px;
+        top: 50px
+    }
+
+    #need,#tacos {
+        color: #fff;
+        font-family: 'Handlee',sans-serif
+    }
+
+    #need {
+        text-align: center;
+        top: -15px;
+        font-size: 26px
+    }
+
+    #tacos {
+        -webkit-appearance: none;
+        text-decoration: none;
+        top: -10px;
+        font-size: 23px;
+        border-radius: 2px;
+        height: 30px;
+        width: 190px;
+        border-color: transparent;
+        background-color: #b51a00;
+        cursor: pointer;
+        outline: none
+    }
+
+    #siteimg {
+        top: 140px;
+        left: 0;
+        right: 0;
+        height: 310px;
+        background-image: url(http://i.imgur.com/M9WnfSa.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+
+    #logoimg,#siteimg,.menu {
+        position: absolute
+    }
+
+    #logoimg {
+        top: 30%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        height: auto;
+        width: 100%;
+        background-color: transparent
+    }
+
+    img {
+        position: relative;
+        height: 150px;
+        width: 300px;
+        border-radius: 10px
+    }
+
+    .menu {
+        display: none
+    }
+
+    .littleme,.menuwrap {
+        left: 0;
+        right: 0;
+        height: 50px
+    }
+
+    #alm,.menuwrap {
+        top: 0;
+        z-index: 10001
+    }
+
+    .menuwrap {
+        transform: translate3d(0,0,0);
+        width: 100%;
+        display: inline;
+        position: fixed
+    }
+
+    #alm {
+        position: absolute;
+        height: 48px;
+        left: 0
+    }
+
+    #alm2 {
+        height: 48px;
+        width: 140px
+    }
+
+    .littleme {
+        display: initial;
+        text-align: center;
+        z-index: 10000;
+        overflow: visible;
+        background-color: #000;
+        opacity: 1;
+        margin: 0
+    }
+
+    .othermenu,.toggle,.toggle+a {
+        display: none;
+        left: 0;
+        right: 0;
+        text-align: center
+    }
+
+    .toggle {
+        display: block;
+        text-align: right;
+        background-color: #000;
+        opacity: 1;
+        top: 3px;
+        position: absolute;
+        color: #b51a00;
+        font-size: 48px;
+        font-weight: 100;
+        line-height: 45px;
+        text-decoration: none;
+        font-family: 'Material Icons',sans-serif;
+        z-index: 7000
+    }
+
+    #drop:checked+label {
+        color: #b51a00
+    }
+
+    [id^=drop]:checked+label+ul {
+        display: block
+    }
+
+    #formhead,.littleme ul li {
+        text-align: center;
+        font-family: 'Handlee',sans-serif
+    }
+
+    .littleme ul li {
+        display: block;
+        left: -7.5%;
+        right: 7.5%;
+        width: 100%;
+        border: none;
+        z-index: 6000
+    }
+
+    .littleme ul {
+        padding: 0;
+        left: -7.5%;
+        right: 7.5%;
+        list-style: none;
+        position: relative;
+        text-align: center
+    }
+
+    .info {
+        top: 590px;
+        height: 750px;
+        width: 100%;
+        z-index: 1001;
+        background-color: #000
+    }
+
+    #formhead,#otherside,#taquiza,.info {
+        position: absolute;
+        right: 0;
+        left: 0
+    }
+
+    #formhead {
+        font-size: 36px;
+        color: #fff;
+        z-index: 5000;
+        top: 10px
+    }
+
+    #otherside,#taquiza {
+        top: 150px;
+        height: 500px
+    }
+
+    #otherside {
+        top: 90px;
+        height: 700px;
+        right: 50%
+    }
+
+    #jppic {
+        position: absolute;
+        display: none
+    }
+
+    #tacostwo,#taquizatext {
+        left: 0;
+        text-align: center;
+        font-family: 'Handlee',sans-serif
+    }
+
+    #tacostwo {
+        display: block;
+        margin: auto;
+        -webkit-appearance: none;
+        position: absolute;
+        right: 0;
+        text-decoration: none;
+        height: 35px;
+        width: 180px;
+        border-radius: 5px;
+        border-color: transparent;
+        background-color: #b51a00;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        top: 680px;
+        font-size: 22px
+    }
+
+    #taquizatext {
+        top: 0;
+        font-size: 32px;
+        color: #b51a00
+    }
+
+    #diffin2,#include,#taquizatext {
+        position: absolute;
+        right: 0
+    }
+
+    #diffin2 {
+        text-align: left;
+        font-size: 19px;
+        color: #fff;
+        font-weight: 100;
+        left: 0;
+        top: 75px;
+        font-family: 'Material Icons',sans-serif
+    }
+
+    #include {
+        left: 40px;
+        top: 70px;
+        font-family: 'Open Sans Condensed',sans-serif
+    }
+
+    #diffin3,#include,#include2 {
+        text-align: left;
+        font-size: 19px;
+        color: #fff;
+        font-weight: 100
+    }
+
+    #diffin3 {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 105px;
+        font-family: 'Material Icons',sans-serif
+    }
+
+    #include2 {
+        left: 40px;
+        top: 100px;
+        font-family: 'Open Sans Condensed',sans-serif
+    }
+
+    #diffin4,#include2,#include3 {
+        position: absolute;
+        right: 0
+    }
+
+    #diffin4 {
+        text-align: left;
+        font-size: 19px;
+        color: #fff;
+        font-weight: 100;
+        left: 0;
+        top: 135px;
+        font-family: 'Material Icons',sans-serif
+    }
+
+    #include3 {
+        left: 40px;
+        top: 130px;
+        font-family: 'Open Sans Condensed',sans-serif
+    }
+
+    #diffin5,#include3,#include4 {
+        text-align: left;
+        font-size: 19px;
+        color: #fff;
+        font-weight: 100
+    }
+
+    #diffin5 {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 165px;
+        font-family: 'Material Icons',sans-serif
+    }
+
+    #include4 {
+        left: 40px;
+        top: 160px;
+        font-family: 'Open Sans Condensed',sans-serif
+    }
+
+    #diffin6,#include4,#include5 {
+        position: absolute;
+        right: 0
+    }
+
+    #diffin6 {
+        text-align: left;
+        font-size: 19px;
+        color: #fff;
+        font-weight: 100;
+        left: 0;
+        top: 195px;
+        font-family: 'Material Icons',sans-serif
+    }
+
+    #include5 {
+        left: 40px;
+        top: 190px;
+        font-family: 'Open Sans Condensed',sans-serif
+    }
+
+    #diffin7,#include5,#include6 {
+        text-align: left;
+        font-size: 19px;
+        color: #fff;
+        font-weight: 100
+    }
+
+    #diffin7 {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 225px;
+        font-family: 'Material Icons',sans-serif
+    }
+
+    #include6 {
+        left: 40px;
+        top: 220px;
+        font-family: 'Open Sans Condensed',sans-serif
+    }
+
+    #diffin8,#include6,#include7 {
+        position: absolute;
+        right: 0
+    }
+
+    #diffin8 {
+        text-align: left;
+        font-size: 19px;
+        color: #fff;
+        font-weight: 100;
+        left: 0;
+        top: 255px;
+        font-family: 'Material Icons',sans-serif
+    }
+
+    #include7 {
+        left: 40px;
+        top: 250px;
+        font-family: 'Open Sans Condensed',sans-serif
+    }
+
+    #diffin9,#include7,#include8 {
+        text-align: left;
+        font-size: 19px;
+        color: #fff;
+        font-weight: 100
+    }
+
+    #diffin9 {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 285px;
+        font-family: 'Material Icons',sans-serif
+    }
+
+    #include8 {
+        left: 40px;
+        top: 280px;
+        font-family: 'Open Sans Condensed',sans-serif
+    }
+
+    #diffin10,#include8,#include9 {
+        position: absolute;
+        right: 0
+    }
+
+    #diffin10 {
+        text-align: left;
+        font-size: 19px;
+        color: #fff;
+        font-weight: 100;
+        left: 0;
+        top: 315px;
+        font-family: 'Material Icons',sans-serif
+    }
+
+    #include9 {
+        left: 40px;
+        top: 310px;
+        font-family: 'Open Sans Condensed',sans-serif
+    }
+
+    #diffin11,#include10,#include9 {
+        text-align: left;
+        font-size: 19px;
+        color: #fff;
+        font-weight: 100
+    }
+
+    #diffin11 {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 345px;
+        font-family: 'Material Icons',sans-serif
+    }
+
+    #include10 {
+        left: 40px;
+        top: 340px;
+        font-family: 'Open Sans Condensed',sans-serif
+    }
+
+    #diffin12,#include10,#include11 {
+        position: absolute;
+        right: 0
+    }
+
+    #diffin12 {
+        text-align: left;
+        font-size: 19px;
+        color: #fff;
+        font-weight: 100;
+        left: 0;
+        top: 375px;
+        font-family: 'Material Icons',sans-serif
+    }
+
+    #include11 {
+        left: 40px;
+        top: 370px;
+        font-family: 'Open Sans Condensed',sans-serif
+    }
+
+    #diffin13,#include11,#include12 {
+        text-align: left;
+        font-size: 19px;
+        color: #fff;
+        font-weight: 100
+    }
+
+    #diffin13 {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 405px;
+        font-family: 'Material Icons',sans-serif
+    }
+
+    #include12 {
+        left: 40px;
+        top: 400px;
+        font-family: 'Open Sans Condensed',sans-serif
+    }
+
+    #botstuff,#con,#include12,#numba {
+        position: absolute;
+        right: 0
+    }
+
+    #botstuff {
+        left: 0;
+        width: 100%;
+        height: 300px;
+        top: 1500px
+    }
+
+    #con,#numba {
+        text-align: center;
+        color: #fff
+    }
+
+    #con {
+        font-family: 'Handlee',sans-serif;
+        font-size: 29px;
+        top: -140px;
+        left: 0
+    }
+
+    #numba {
+        left: -140px;
+        top: -70px
+    }
+
+    #colnum,#mail,#numba {
+        font-family: 'Handlee',sans-serif;
+        font-size: 22px
+    }
+
+    #colnum {
+        position: absolute;
+        right: 0;
+        text-align: center;
+        left: 60px;
+        top: -70px;
+        color: #b51a00
+    }
+
+    #mail {
+        left: -212px;
+        top: -30px;
+        color: #fff
+    }
+
+    #colmail,#imgbotl,#mail {
+        position: absolute;
+        right: 0;
+        text-align: center
+    }
+
+    #colmail {
+        font-family: 'Handlee',sans-serif;
+        color: #b51a00;
+        font-size: 22px;
+        left: 60px;
+        top: -30px
+    }
+
+    #imgbotl {
+        left: 12%;
+        top: 90px;
+        height: 150px;
+        width: 300px;
+        background-image: url(http://i.imgur.com/cBAFUZv.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        z-index: 8000
+    }
+
+    #imgleft,.menutwo {
+        position: absolute;
+        display: none
+    }
+
+    #bottom,#endstuf {
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 8000
+    }
+
+    #bottom {
+        height: 100px;
+        top: 1730px
+    }
+
+    a[href^=tel] {
+        color: inherit;
+        text-decoration: none
+    }
+
+    #endstuf {
+        font-family: 'Handlee',sans-serif;
+        font-size: 14px;
+        color: #fff;
+        top: 110%;
+        text-align: center
+    }
 }
-
-
